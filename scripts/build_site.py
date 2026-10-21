@@ -58,7 +58,7 @@ VIDEOS = {
 # Fotos por sección: (archivo en assets/images/charla, epígrafe)
 PHOTOS = {
     "intro": [("d02-image2", "")],
-    "liceo": [("d03-image3", "Liceo Naval Militar «Almirante Guillermo Brown»"), ("d03-image4", "El banderín de la XXXV"),
+    "liceo": [("d03-image3", "Liceo Naval Militar «Almirante Guillermo Brown»"), ("d03-image4", "El banderín de la XXXV promoción, con las Malvinas como motivo"),
               ("d03-image5", "La XXXV"), ("d03-image7", ""), ("d03-image9", ""), ("d03-image8", ""), ("d03-image6", "")],
     "atlantis": [("d03-image10", "Con el Atlantis en la Antártida")],
     "transporte": [("d04-image14", "Transporte ARA B-5 «Cabo de Hornos»"), ("d04-image11", "El transporte en un sello postal"),
@@ -358,7 +358,7 @@ def stats(track):
 def build_index(track):
     phases = "".join(f'<tr><th scope="row">{ph["name"]}</th><td>{miles(ph["nm"])} MN</td></tr>' for ph in track["summary"]["phases"])
     parts = [
-        ("Antecedentes", "El Liceo Naval, la XXXV, el Atlantis y el transporte ARA «Cabo de Hornos».", "./pages/antecedentes.html"),
+        ("Antecedentes", "1982: el ingreso al Liceo Naval con la XXXV, el transporte ARA «Cabo de Hornos» y el Atlantis.", "./pages/antecedentes.html"),
         ("Sudor I", "Poner el velero en condiciones para el viaje.", "./pages/velero.html"),
         ("El mar", "Del Centro Naval Núñez a la costa patagónica y el cruce.", f"./pages/bitacora/{CHAPTERS[0]['slug']}.html"),
         ("Lágrimas", "El homenaje al Sobral, Tumbledown y Darwin.", "./pages/sobral.html"),
@@ -403,7 +403,7 @@ def build_antecedentes():
 <p class="lead">El Liceo Naval, una promoción de amigos, el Atlantis en la Antártida y un transporte de la Armada que se llamaba como el velero.</p></section>
 {draft("completar con tu relato de la charla; los epígrafes vacíos se pueden llenar en scripts/build_site.py.")}
 <article class="card prose page-card"><header class="article-heading"><p class="eyebrow">Antecedente I</p><h2>El Liceo Naval y la XXXV</h2></header>
-<p>Todo empieza en el Liceo Naval Militar «Almirante Guillermo Brown» y en la XXXV, la promoción de amigos que sigue navegando junta.</p></article>
+<p>Todo empieza en el Liceo Naval Militar «Almirante Guillermo Brown». Ricardo ingresó en 1982, el mismo año de la guerra de Malvinas, con la XXXV promoción, la de los amigos que siguen navegando juntos.</p><p>Por eso el banderín de la XXXV tiene a las Malvinas como motivo. Cuarenta y dos años después, aquel cadete que entró al Liceo con la guerra de fondo llegó navegando hasta las islas.</p></article>
 {photo_grid("liceo", 1, "Liceo Naval y la XXXV")}
 <article class="card prose page-card"><header class="article-heading"><p class="eyebrow">Antecedente I</p><h2>El Atlantis y la Antártida</h2></header>
 <p>Antes de Malvinas hubo otra gran travesía: la expedición del velero Atlantis desde Buenos Aires hasta la Antártida, entre 2021 y 2022.</p>
