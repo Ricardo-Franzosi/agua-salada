@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Recorrido día por día del velero Cabo de Hornos en su travesía a Malvinas.">
+<meta name="theme-color" content="#0b3440">
+<title>Cartografía · Cabo de Hornos a Malvinas</title>
+<link rel="stylesheet" href="css/styles.css"><link rel="stylesheet" href="css/bitacora.css">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="./css/cartografia.css"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""><style>.nm-table{width:100%;max-width:520px;margin-top:1.2rem;border-collapse:collapse}.nm-table th,.nm-table td{padding:.5rem .7rem;border-bottom:1px solid var(--line);text-align:left}.nm-table td{text-align:right;color:var(--navy);font-weight:800}.nm-table tr:last-child th,.nm-table tr:last-child td{font-weight:800;border-bottom:0}.timeline-card{display:grid}</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header class="site-header"><div class="shell header-inner"><a class="brand" href="index.html" aria-label="Cabo de Hornos a Malvinas, inicio"><span class="brand-mark" aria-hidden="true">CdH</span><span>Cabo de Hornos a Malvinas</span></a><nav class="nav" aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="pages/bitacora/index.html">Bitácora</a><a href="cartografia.html" aria-current="page">Cartografía</a><a href="pages/sobral.html">Homenaje al Sobral</a><a href="pages/videos.html">Videos</a><a href="pages/gallery.html">Galería</a><a href="pages/velero.html">El velero</a></nav></div></header>
+<main id="contenido">
+<section class="shell page-hero map-intro"><p class="eyebrow">Cartografía · Garmin inReach</p><h1>El viaje, día por día</h1>
+<p class="lead">La ruta sale de las posiciones que el inReach del Cabo de Hornos transmitió durante toda la travesía, ordenadas por fecha y depuradas de saltos imposibles del GPS. Los recorridos en tierra por las islas no se cuentan como navegación.</p>
+<table class="nm-table"><tbody><tr><th scope="row">Rumbo al sur</th><td>994 MN</td></tr><tr><th scope="row">Malvinas</th><td>1.087 MN</td></tr><tr><th scope="row">Regreso</th><td>1.384 MN</td></tr><tr><th scope="row">Total</th><td>3.465 MN</td></tr></tbody></table></section>
+<section class="shell map-card" aria-labelledby="mapa-titulo"><div class="map-toolbar" aria-label="Capas de la cartografía"><button type="button" data-layer="full" aria-pressed="true">Travesía completa</button><button type="button" data-layer="ida" aria-pressed="false">Rumbo al sur</button><button type="button" data-layer="malvinas" aria-pressed="false">Malvinas</button><button type="button" data-layer="regreso" aria-pressed="false">Regreso</button><span class="map-status" id="map-status" role="status">Cargando track…</span></div>
+<div id="map" role="region" aria-labelledby="mapa-titulo"></div><div class="map-caption"><p id="mapa-titulo"><strong>Cartografía interactiva:</strong> elegí una etapa o mové la línea de tiempo. El punto marrón es el lugar del homenaje al ARA «Alférez Sobral».</p>
+<div class="route-key"><span class="key-item"><i class="key-line"></i> rumbo al sur</span><span class="key-item"><i class="key-line malvinas"></i> Malvinas</span><span class="key-item"><i class="key-line regreso"></i> regreso</span></div></div></section>
+<section class="shell timeline-card" aria-labelledby="cronologia-titulo"><div class="timeline-heading"><div><p class="eyebrow">Lectura interactiva</p><h2 id="cronologia-titulo">Avance de la travesía</h2></div><p>Mové el control o elegí un día. El mapa muestra el recorrido acumulado hasta esa fecha.</p></div>
+<div class="timeline-controls"><button class="control-button" type="button" id="play-button">▶ Reproducir</button><input id="day-range" type="range" min="0" max="0" value="0" step="1" aria-label="Día de la travesía"><div><div class="day-label" id="day-label">—</div><div class="day-count" id="day-count">—</div></div></div>
+<div class="day-list" id="day-list" aria-label="Días de la travesía"></div></section>
+<section class="shell" aria-labelledby="escala-titulo"><div class="section-heading"><div><p class="eyebrow">Escalas</p><h2 id="escala-titulo">Puertos y fondeaderos</h2></div></div><div class="stop-list" id="stop-list"></div></section>
+</main>
+<footer class="site-footer"><div class="shell footer-inner"><div><strong>Cabo de Hornos a Malvinas</strong><p>Velero Cabo de Hornos · enero y febrero de 2024.</p></div><div class="footer-links"><a href="pages/bitacora/index.html">Bitácora</a><a href="pages/sobral.html">Homenaje</a><a href="https://www.instagram.com/ricardofranzosi/" target="_blank" rel="noopener noreferrer">Instagram</a></div></div></footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script><script src="./data/track.js"></script><script>
+const map=L.map('map',{scrollWheelZoom:false});
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:12,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+const palette={ida:'#237887',malvinas:'#7256a5',regreso:'#c47743'};const names={ida:'rumbo al sur',malvinas:'Malvinas',regreso:'regreso'};
+const status=document.getElementById('map-status');const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const fmt=v=>new Intl.DateTimeFormat('es-AR',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(v+'T12:00:00Z'));
+const data=window.TRACK;let dayIndex=data.days.length-1,layerMode='full',mapLayer=L.featureGroup(),currentMarker,playing=false,playTimer;
+const draw=(fit=true)=>{map.removeLayer(mapLayer);mapLayer=L.featureGroup().addTo(map);const visible=data.days.slice(0,dayIndex+1).filter(d=>layerMode==='full'||d.phase===layerMode);let count=0,nm=0;
+visible.forEach(d=>{if(d.points.length>1)L.polyline(d.points,{color:palette[d.phase],weight:4,opacity:.9,lineJoin:'round'}).addTo(mapLayer);count+=d.count;nm+=d.nm;});
+const sel=data.days[dayIndex];const last=[...data.days.slice(0,dayIndex+1)].reverse().find(d=>d.points.length);
+if(currentMarker)map.removeLayer(currentMarker);if(last){const pt=last.points.at(-1);currentMarker=L.circleMarker(pt,{radius:7,color:'#fff',weight:2,fillColor:palette[sel.phase],fillOpacity:1}).addTo(map).bindTooltip('Posición del '+sel.label,{direction:'top'});}
+status.textContent=`${Math.round(nm).toLocaleString('es-AR')} MN hasta el ${sel.label}`;if(fit&&mapLayer.getLayers().length)map.fitBounds(mapLayer.getBounds(),{padding:[24,24],maxZoom:8});
+document.querySelectorAll('[data-layer]').forEach(b=>b.setAttribute('aria-pressed',b.dataset.layer===layerMode?'true':'false'));
+document.getElementById('day-label').textContent=sel.label;document.getElementById('day-count').textContent=(sel.nm?`${sel.nm.toLocaleString('es-AR')} MN ese día · `:'En puerto o fondeado · ')+names[sel.phase];
+document.getElementById('day-range').value=dayIndex;document.querySelectorAll('.day-button').forEach((b,i)=>b.setAttribute('aria-current',i===dayIndex?'true':'false'));};
+const list=document.getElementById('day-list');data.days.forEach((d,i)=>{const b=document.createElement('button');b.type='button';b.className='day-button';b.innerHTML=`<strong>${esc(d.label)}</strong><span>${d.nm?d.nm.toLocaleString('es-AR')+' MN':'en puerto'}</span><em>${names[d.phase]}</em>`;b.addEventListener('click',()=>{dayIndex=i;draw();});list.appendChild(b);});
+data.markers.forEach(mk=>{L.circleMarker([mk.lat,mk.lon],{radius:mk.name.includes('Sobral')?9:6,color:'#fff',weight:2,fillColor:mk.name.includes('Sobral')?'#9a6840':'#0b3440',fillOpacity:1}).addTo(map).bindTooltip(mk.name,{direction:'top',offset:[0,-6]});
+const c=document.createElement('article');c.className='stop-card';c.innerHTML=`<strong>${esc(mk.name)}</strong><span>${esc(fmt(mk.date))}</span>`;document.getElementById('stop-list').appendChild(c);});
+document.querySelectorAll('[data-layer]').forEach(b=>b.addEventListener('click',()=>{layerMode=b.dataset.layer;draw();}));
+const range=document.getElementById('day-range');range.max=data.days.length-1;range.addEventListener('input',e=>{dayIndex=+e.target.value;draw(false);});
+document.getElementById('play-button').addEventListener('click',()=>{const b=document.getElementById('play-button');if(playing){playing=false;clearInterval(playTimer);b.textContent='▶ Reproducir';return;}if(dayIndex>=data.days.length-1)dayIndex=0;playing=true;b.textContent='❚❚ Pausar';playTimer=setInterval(()=>{if(dayIndex>=data.days.length-1){playing=false;clearInterval(playTimer);b.textContent='▶ Reproducir';return;}dayIndex++;draw(false);},700);});
+draw();
+</script>
+</body>
+</html>
