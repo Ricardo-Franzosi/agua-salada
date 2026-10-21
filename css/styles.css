@@ -17,3 +17,4 @@ a[href$="navantar-2018-oficiales-marinas.jpg"] img{width:100%;height:auto;aspect
 .draft-note{margin:0 0 1.5rem;padding:.8rem 1rem;border:1px solid #e3c48f;border-radius:var(--radius-sm);background:#fff8ec;color:#6b4e1f;font-size:.88rem}
 @media(max-width:900px){.stats-row{grid-template-columns:repeat(2,minmax(0,1fr))}.video-grid,.fallen-list{grid-template-columns:1fr}.video-card.video-featured{grid-column:auto}.timeline-facts li{grid-template-columns:1fr;gap:.2rem}}
 .brand-mark{width:2.3rem;height:2.3rem;font-size:.74rem;letter-spacing:-.02em}
+.source-note{font-size:.85rem;color:var(--ink-soft)!important}.source-note a{color:var(--sea)}
