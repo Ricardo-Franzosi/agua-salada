@@ -216,7 +216,7 @@ CHAPTERS = [
 
 THANKS = [
     ("Mar del Plata", "CN Daniel Corvalán, Ctre. Roberto Denis, TC Agustín Vázquez"),
-    ("Base Naval Puerto Belgrano", "Cro. Rodrigo Ataun, CN Daniel Aldama, CN Guillermo Simoncini, C Alte. Gustavo Lio Pombo, Oscar Isa (ADAM y velero «Azul»), Omar Anziano, Andrea Gatica, Fernando Almada, Máximo Mónaco"),
+    ("Base Naval Puerto Belgrano", "Cro. Rodrigo Ataun, CN Daniel Aldama, CN Guillermo Simoncini, C Alte. Gustavo Lioi Pombo, Oscar Isa (ADAM y velero «Azul»), Omar Anziano, Andrea Gatica, Fernando Almada, Máximo Mónaco"),
     ("Camarones", "Mara y Ariel (Caleta Sara)"),
     ("San Julián", "Sergio Lasencion, Juan Pereira"),
     ("Malvinas", "LT Samanta Davis"),
@@ -551,6 +551,27 @@ def build_sobral(track):
              main, extra_head=leaflet, scripts=scripts), encoding="utf-8")
 
 
+POEMA = [
+    ["Hay títulos que no tienen diploma…", "Títulos caros…", "Pagados en esfuerzo y sudor.", "Financiados en soledades.", "Impresos en el alma…"],
+    ["Títulos conquistados,", "por acción y por derecho.", "No llegan por línea de sangre,", "se deja sangre por ellos."],
+    ["Podrá haber diez mil títulos", "o diplomas académicos.", "Yo me quedo con el mío…", "Marino en el mar abierto."],
+    ["Quienes una vez sentimos", "el mar glorioso e inmenso.", "Quienes alguna vez dormimos", "acunados por la rola mar adentro.",
+     "Quienes alguna vez no supimos", "si volveríamos a puerto."],
+    ["Quienes una vez sentimos…", "soles y sal en el pecho.", "Quienes tenemos hermanos", "mucho más que compañeros,",
+     "hermanos de agua salada,", "con buen clima o con mal tiempo."],
+    ["Quienes nos fuimos a proa", "para retar a los vientos…", "O nos sentamos a popa", "cuando el sol cae al océano.",
+     "Quienes cobramos las artes", "con agua brava en los dedos."],
+    ["Siempre seremos marinos,", "por más que ya estemos viejos."],
+]
+
+
+def poema():
+    estrofas = "".join("<p>" + "<br>".join(html.escape(v) for v in e) + "</p>" for e in POEMA)
+    return (f'<article class="card prose page-card poem"><header class="article-heading"><p class="eyebrow">Para cerrar</p>'
+            f'<h2>Marino en el mar abierto</h2></header><div class="poem-body">{estrofas}</div>'
+            f'<p class="poem-author">Autor anónimo</p></article>')
+
+
 def build_gracias():
     rows = "".join(f'<div><dt>{html.escape(a)}</dt><dd>{html.escape(b)}</dd></div>' for a, b in THANKS)
     main = f"""<main class="shell" id="contenido">
@@ -560,10 +581,11 @@ def build_gracias():
 <p>Y a la Promoción 90 de la ESNM, por concedernos el honor del homenaje, y a todos los que siguieron el viaje mensaje a mensaje.</p>
 <p>Acompañaron la travesía: Finca Lolita y Famille Bizet, Finca Ambrosía, Dos Anclas, Clan Issime, Mieles Santos, Georgalos y Red Bull.</p></article>
 {photo_grid("gracias", 1, "Agradecimientos")}
+{poema()}
 </main>"""
     (ROOT / "pages" / "gracias.html").write_text(
         page(1, "pages/gracias.html", f"Gracias · {SITE}", "Agradecimientos de la travesía del velero Cabo de Hornos a Malvinas.", main,
-             extra_head="<style>.thanks dd{text-align:right;max-width:60%;font-weight:600}</style>"), encoding="utf-8")
+             extra_head="<style>.thanks dd{text-align:right;max-width:60%;font-weight:600}.poem{margin-top:2rem}.poem-body p{font-family:Georgia,'Times New Roman',serif;font-size:1.08rem;line-height:1.75;color:#263b42!important;font-style:italic}.poem-author{color:var(--ink-soft)!important;font-size:.9rem}</style>"), encoding="utf-8")
 
 
 def build_videos():
