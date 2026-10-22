@@ -110,7 +110,7 @@ PHOTOS = {
     "puerto-argentino": [("d12-image75", "Llegada a Puerto Argentino"), ("puerto/pa-llegada", "23 de enero: Puerto Argentino desde la cubierta del Cabo de Hornos"),
                          ("d12-image73", "En un pub del centro"), ("d12-image74", "En un pub del centro"),
                          ("d12-image76", "Ventana de una residencia «kelper». El cartel dice: «A la Nación Argentina y a su pueblo: serán bienvenidos en nuestro país cuando abandonen su reclamo de soberanía y reconozcan nuestro derecho a la autodeterminación»"),
-                         ("puerto/pa-telefono", "La cabina telefónica roja, junto a la oficina de información turística"),
+                         ("puerto/pa-telefono", "Francho en la cabina telefónica roja, junto a la oficina de información turística"),
                          ("puerto/pa-penguin-news", "La redacción del «Penguin News», el periódico de las islas"),
                          ("d13-image77", "Ambulancias del hospital nuevo"), ("d13-image78", "Hospital de Puerto Argentino"),
                          ("d13-image79", "Monumento de conmemoración de los ingleses"), ("d13-image80", "Monumento inglés a Margaret Thatcher"),
