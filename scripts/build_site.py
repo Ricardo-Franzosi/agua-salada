@@ -62,7 +62,7 @@ PHOTOS = {
               ("d03-image5", "La XXXV"), ("d03-image7", ""), ("d03-image9", ""), ("d03-image8", ""), ("d03-image6", "")],
     "atlantis": [("d03-image10", "Con el Atlantis en la Antártida")],
     "transporte": [("d04-image14", "Transporte ARA B-5 «Cabo de Hornos»"), ("d04-image11", "El transporte en un sello postal"),
-                   ("d04-image15", "Desembarco de los aviones Super Étendard del transporte ARA «Cabo de Hornos» en 1982"),
+                   ("d04-image15", "Desembarco de los Super Étendard traídos desde Francia por el transporte ARA «Cabo de Hornos», al terminar la guerra"),
                    ("d04-image12", "El escudo del ARA «Cabo de Hornos»"), ("d04-image16", "")],
     "familia": [("d27-image134", ""), ("d27-image135", "")],
     "sudor1": [("d05-image18", ""), ("d05-image17", ""), ("d05-image19", ""), ("d05-image22", "El casco, de nuevo rojo"),
@@ -346,6 +346,30 @@ def build_bitacora_index(track):
         page(2, "pages/bitacora/index.html", f"Bitácora · {SITE}", "Bitácora de la travesía del velero Cabo de Hornos a Malvinas.", main), encoding="utf-8")
 
 
+TIMELINE = [
+    ("1979", "El transporte", "Entra en servicio el transporte ARA B-5 «Cabo de Hornos», de la clase Costa Sur.", "pages/antecedentes.html"),
+    ("1982", "El Liceo Naval", "Ricardo ingresa al Liceo Naval Militar «Almirante Guillermo Brown» con la XXXV promoción. Su banderín lleva las Malvinas.", "pages/antecedentes.html"),
+    ("Abril–junio de 1982", "La guerra", "Al mando del capitán de corbeta Ricardo Ángel Franzosi, el transporte «Cabo de Hornos» es buque logístico: lleva tropa y pertrechos.", "pages/antecedentes.html"),
+    ("3 de mayo de 1982", "El «Sobral»", "Un misil destruye el puente del aviso ARA «Alférez Sobral». Mueren el capitán Gómez Roca y siete hombres. Desde el «Cabo de Hornos», su padre quiso ir en su auxilio y no lo dejaron.", "pages/sobral.html"),
+    ("Fines de 1982", "Los Super Étendard", "Terminada la guerra, el transporte trae desde Francia los aviones Super Étendard de la Armada.", "pages/antecedentes.html"),
+    ("2021–2022", "El Atlantis", "La expedición en velero de Buenos Aires a la Antártida.", "pages/antecedentes.html"),
+    ("3 de enero de 2024", "La zarpada", "Otro «Cabo de Hornos», ahora un velero, zarpa del Centro Naval Núñez rumbo a Malvinas.", "pages/bitacora/la-zarpada.html"),
+    ("22 de enero de 2024", "El homenaje", "Frente a la costa norte de las islas, ceremonia naval por el ARA «Alférez Sobral» y sus caídos.", "pages/sobral.html"),
+    ("23 al 26 de enero de 2024", "Las islas", "Puerto Argentino, el cementerio de Darwin y Tumbledown.", "pages/bitacora/tumbledown-y-darwin.html"),
+    ("24 de febrero de 2024", "El regreso a Ítaca", "Después de 3.465 millas náuticas, el velero vuelve a Buenos Aires.", "pages/bitacora/el-regreso.html"),
+]
+
+
+def timeline(depth):
+    items = "".join(
+        f'<li class="{"tl-1982" if y.endswith("1982") or y == "1982" else "tl-2024" if "2024" in y else ""}"><time>{html.escape(y)}</time>'
+        f'<a href="{rel(depth)}{href}"><strong>{html.escape(t)}</strong><span>{html.escape(d)}</span></a></li>'
+        for y, t, d, href in TIMELINE)
+    return (f'<section class="shell timeline-1982" aria-labelledby="tl-titulo"><div class="journey-heading"><div><p class="eyebrow">Un mismo nombre, dos barcos</p>'
+            f'<h2 id="tl-titulo">1982 → 2024</h2></div><p>El año de la guerra unió al Liceo Naval, al transporte «Cabo de Hornos» y al «Sobral». Cuarenta y dos años después, el velero cerró el círculo.</p></div>'
+            f'<ol class="tl">{items}</ol></section>')
+
+
 def stats(track):
     s = track["summary"]
     lat = f"{abs(s['southmost']):.1f}".replace(".", ",")
@@ -379,6 +403,7 @@ def build_index(track):
 <section class="shell"><div class="memorial"><p class="eyebrow">Lágrimas · 22 de enero de 2024</p><h2>«Misión cumplida»</h2>
 <p>Frente a la costa norte de las islas, la tripulación del Cabo de Hornos rindió honores al aviso ARA «Alférez Sobral», a su comandante, el capitán de corbeta Sergio Raúl Gómez Roca, y a los hombres que cayeron con él en mayo de 1982. Cuando la corona flotaba por la popa, dos toninas overas saltaron, una a cada lado.</p>
 <p><a class="button" style="background:#fff;color:var(--navy)" href="./pages/sobral.html">Conocer la historia y ver la ceremonia</a></p></div></section>
+{timeline(0)}
 <section class="journey-overview shell" aria-labelledby="ruta-viaje"><div class="journey-heading"><div><p class="eyebrow">Sudor, lágrimas y mar</p><h2 id="ruta-viaje">El viaje en cinco partes</h2></div>
 <p>Como en la charla, el relato va de los antecedentes al regreso.</p></div><div class="journey-cards">{journey}</div></section>
 <section class="shell video-section"><div class="section-heading video-heading"><div><p class="eyebrow">Video</p><h2>Agua salada</h2></div><p>Navegando hacia las islas, la mañana del 22 de enero.</p></div>
@@ -411,9 +436,9 @@ def build_antecedentes():
 {photo_grid("atlantis", 1, "Atlantis")}
 <article class="card prose page-card"><header class="article-heading"><p class="eyebrow">Antecedente II</p><h2>El transporte ARA «Cabo de Hornos»</h2></header>
 <p>El transporte ARA B-5 «Cabo de Hornos», de la clase Costa Sur, se construyó en el astillero Príncipe, Menghi y Penco: 119,9 metros de eslora y 10.894 toneladas de desplazamiento. Su quilla se puso en 1977, fue botado en 1978 y entró en servicio en 1979.</p>
-<p>Durante la guerra de Malvinas lo comandaba el entonces capitán de corbeta Ricardo Ángel Franzosi, padre de Ricardo. En 1982 el transporte desembarcó los aviones Super Étendard de la Armada.<!-- ⚑ confirmar detalle del traslado de los Super Étendard --></p>
+<p>Durante la guerra de Malvinas lo comandaba el entonces capitán de corbeta Ricardo Ángel Franzosi, padre de Ricardo. En esos meses fue buque logístico: transportó tropa y pertrechos.</p><p>Al terminar la guerra, el «Cabo de Hornos» trajo desde Francia los aviones Super Étendard de la Armada.</p>
 <p>Cuarenta y dos años después, su hijo llevó otro «Cabo de Hornos», un velero, a navegar las mismas aguas que su padre había navegado.</p>
-<div class="mini-note">⚑ Confirmar el detalle del traslado de los Super Étendard.</div></article>
+</article>
 {photo_grid("transporte", 1, "Transporte ARA Cabo de Hornos")}
 {photo_grid("familia", 1, "")}
 </main>"""
