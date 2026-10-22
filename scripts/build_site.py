@@ -72,50 +72,68 @@ PHOTOS = {
     "atlantis": [("d03-image10", "Con el Atlantis en la Antártida")],
     "transporte": [("d04-image14", "Transporte ARA B-5 «Cabo de Hornos»"), ("d04-image11", "El transporte en un sello postal"),
                    ("d04-image15", "Desembarco de los Super Étendard traídos desde Francia por el transporte ARA «Cabo de Hornos», al terminar la guerra"),
-                   ("d04-image12", "El escudo del ARA «Cabo de Hornos»"), ("d04-image16", "")],
-    "familia": [("d27-image134", ""), ("d27-image135", "")],
-    "sudor1": [("d05-image18", "Así lo recibimos en 2017, con el casco azul"), ("d05-image17", ""), ("d05-image19", "El casco azul original"), ("d05-image22", "El casco, de nuevo rojo"),
-               ("d05-image20", ""), ("d05-image21", ""), ("d05-image23", ""), ("d05-image24", "")],
+                   ("d04-image12", "El escudo del ARA «Cabo de Hornos»"), ("d04-image16", "Entrega de uniformes, Liceo Naval, 1982. Padre e hijo")],
+    "familia": [("d27-image134", "En el puente de la fragata Libertad: Martín Franzosi (hermano), Ricardo Franzosi (padre) y Ricardo Franzosi"),
+                ("d27-image135", "Padre e hijo")],
+    "sudor1": [("d05-image18", "Así lo recibimos en 2017, con el casco azul"), ("d05-image17", "Salida a tierra, rumbo a lo de Jesús Vinacua"), ("d05-image19", "El casco azul original"), ("d05-image22", "El casco, de nuevo rojo: salida de Benavídez, nuevamente al agua"),
+               ("d05-image20", "Vista de la cubierta ya terminada"), ("d05-image21", "Francho iniciando el trabajo de interiores"),
+               ("d05-image23", ""), ("d05-image24", "")],
     "sudor2023": [("ig/ig-004", "Navegación previa: prueba de mar, noviembre de 2023"), ("ig/ig-005", "Buenos Aires – Quequén – Mar del Plata – Buenos Aires"),
                   ("ig/ig-006", "Noviembre de 2023, pasando por Mar del Plata"), ("ig/ig-015", "Últimos preparativos rumbo a Malvinas"),
-                  ("ig/ig-016", ""), ("ig/ig-017", ""), ("ig/ig-018", ""), ("ig/ig-001", "Muchas horas de trabajo para llegar hasta hoy"),
-                  ("ig/fb-traje-de-agua", "")],
-    "sudor1b": [("d06-image25", ""), ("d06-image26", ""), ("d06-image27", ""), ("d06-image28", ""), ("d06-image29", ""),
-                ("d06-image30", "El motor nuevo"), ("d06-image36", ""), ("d06-image34", ""), ("d06-image33", ""),
-                ("d06-image35", ""), ("d06-image32", ""), ("d06-image31", ""), ("d06-image37", "")],
-    "la-zarpada": [("d03-image6", "Planificando la derrota a bordo del Cabo de Hornos"), ("ig/ig-033", "Llegó el día: 2 de enero de 2024"),
+                  ("ig/ig-016", "El Cabo de Hornos amarrado junto al Atlantis en Mar del Plata, en la navegación previa de prueba de mar"), ("ig/ig-017", "Una noche en la amarra del Centro Naval Núñez"), ("ig/ig-018", "La luz nocturna del compás del Cabo de Hornos"), ("ig/ig-001", "Muchas horas de trabajo para llegar hasta hoy. Octubre de 2019: vuelve al agua después de la modificación de la carroza"),
+                  ("ig/fb-traje-de-agua", "Francho haciendo un delivery del «Spirit of Sydney» desde Ushuaia a Piriápolis, abril de 2023")],
+    "sudor1b": [("d06-image25", "En el travel lift: sacada a tierra para revisión y pintura previa, en 2023, en el Club Náutico San Isidro"),
+                ("d06-image26", "Colocación de la chubasquera rígida"), ("d06-image27", "Carpintería de interiores"), ("d06-image28", "Armando la conejera"), ("d06-image29", ""),
+                ("d06-image30", "El motor nuevo"), ("d06-image36", ""), ("d06-image34", ""), ("d06-image33", "Desvío de los rizos al cockpit"),
+                ("d06-image35", "Colocación de los molinetes"), ("d06-image32", "Cierre de la tapa de inspección del nuevo tanque de servicio de gasoil del Cabo de Hornos"), ("d06-image31", "En el Cabo de Hornos, trabajando con Juan Theodorou y Norman Minnell"), ("d06-image37", "Día de trabajo pegando antideslizante en cubierta: Diego Bussetti, Norman Minnell, Esteban Casares y Jorge Bizet")],
+    "la-zarpada": [("d03-image6", "Planificando la derrota a bordo del Cabo de Hornos: Esteban Casares, Oscar Díaz Thompson, Ricardo Franzosi y Walter Czeskiavikus"), ("ig/ig-033", "Llegó el día: 2 de enero de 2024"),
                    ("ig/ig-040", "Flamean los gallardetes del Centro Naval, el Yacht Club Neuquén y el CGLNM Alte. Brown"),
-                   ("ig/ig-039", "En navegación frente a La Plata")],
+                   ("ig/ig-039", "En navegación frente a La Plata: Florencia y Ricardo Franzosi, Oscar Díaz Thompson y Norman Minnell")],
     "mar-del-plata-y-puerto-belgrano": [("d07-image39", "El Cabo de Hornos en Mar del Plata"), ("ig/ig-051", "Almorzando en el Centro Naval de Mar del Plata"),
-                                        ("ig/ig-052", "Padre e hijo de guardia"), ("ig/ig-067", "Postales marplatenses"),
+                                        ("ig/ig-052", "Padre e hijo de guardia: Benjamín y Jorge Bizet"), ("ig/ig-067", "Postales marplatenses"),
                                         ("ig/ig-060", "Preparando la siguiente pierna"), ("ig/ig-063", ""),
                                         ("ig/ig-080", "Llegada a la Base Naval Puerto Belgrano"), ("ig/ig-081", "Hotel de la Base Naval Puerto Belgrano"),
-                                        ("ig/ig-086", ""), ("ig/ig-089", "Atardeceres arriba del Cabo de Hornos"), ("ig/ig-090", ""), ("ig/ig-092", ""), ("d08-image44", ""), ("d08-image45", ""), ("d08-image47", "Asado a bordo"),
-                                        ("d08-image46", ""), ("d08-image48", ""), ("d08-image49", ""), ("d08-image50", "")],
+                                        ("ig/ig-086", "Esteban Casares en la BNPB, en la escala rumbo al sur"), ("ig/ig-089", "Atardeceres arriba del Cabo de Hornos"), ("ig/ig-090", ""), ("ig/ig-092", ""), ("d08-image44", ""), ("d08-image45", "En navegación: Jorge Bizet, Oscar Díaz Thompson y Norman Minnell"), ("d08-image47", "Asado a bordo: Oscar Díaz Thompson"),
+                                        ("d08-image46", "El «Torry» preparando los huevos revueltos con cebolla y panceta para el desayuno"),
+                                        ("d08-image48", "Walter, el «Bicho», preparando un almuerzo"), ("d08-image49", "Con el «Torry», poniendo el banderín de A.D.A.N. en el obenque"),
+                                        ("d08-image50", "Atentos a lo que se veía en el horizonte")],
     "bahia-cracker": [("d09-image51", "El Cabo de Hornos fondeado"), ("ig/ig-097", "Tarde de backgammon"), ("ig/ig-098", ""),
-                      ("ig/ig-099", ""), ("ig/ig-100", ""), ("d09-image53", ""), ("d09-image54", ""),
-                      ("d09-image55", ""), ("d09-image56", ""), ("d09-image57", ""), ("d09-image58", "")],
+                      ("ig/ig-099", ""), ("ig/ig-100", ""), ("d09-image53", "Imagen de la bahía desde el drone"), ("d09-image54", "Imagen de la bahía desde el drone"),
+                      ("d09-image55", "Imagen de cómo fue el movimiento del Cabo de Hornos agarrado al fondeo en Bahía Cracker"), ("d09-image56", "Visita a bordo en Bahía Cracker de Gerónimo «Indio» Meyer y Pablo Yema, ambos de la XXXV"), ("d09-image57", "La tripulación rumbo a Malvinas: Esteban Casares, Oscar Díaz Thompson, Jorge Bizet, Francho, Leticia Dufau y Walter Czeskiavikus"),
+                      ("d09-image58", "Pizarra con las novedades de la guardia y el último pronóstico meteorológico")],
     "camarones": [("ig/ig-103", "Gracias, Finca Lolita y Famille Bizet"), ("ig/ig-109", "Pingüinera de Cabo Dos Bahías"), ("ig/ig-110", ""),
                   ("ig/ig-111", ""), ("ig/ig-112", ""), ("ig/ig-116", "Bahía Melo"), ("ig/ig-119", "En la cava de Alma Patagónica"),
-                  ("ig/ig-121", "Chau Camarones"), ("d10-image60", ""), ("d10-image59", ""), ("d10-image62", ""), ("d10-image67", ""), ("d10-image64", ""),
-                  ("d10-image65", ""), ("d10-image61", ""), ("d10-image63", ""), ("d10-image66", "")],
+                  ("ig/ig-121", "Chau Camarones"), ("d10-image60", "El Cabo de Hornos amarrado en Camarones, visto desde el drone"), ("d10-image59", "Imagen del plóter arribando a Puerto Camarones"), ("d10-image62", "Navegando en la rada de Camarones"), ("d10-image67", "La entrada a Caleta Sara"), ("d10-image64", "El cartel de bienvenida a Caleta Sara"),
+                  ("d10-image65", "El parador náutico de Caleta Sara"), ("d10-image61", "Francho haciendo de cirujano, suturando a Georgie, que tuvo un pequeño accidente"), ("d10-image63", "Taladro usado para mover eléctricamente los molinetes"), ("d10-image66", "Taladro usado para mover eléctricamente los molinetes")],
     "el-cruce": [("d11-image71", "Puerto Argentino a la vista"), ("d11-image68", "")],
     "el-homenaje": [("d15-image82", "Ceremonia en honor al capitán Gómez Roca y sus hombres caídos en el ARA «Sobral»")],
-    "puerto-argentino": [("d12-image75", ""), ("d12-image73", ""), ("d12-image74", ""), ("d12-image76", ""),
-                         ("d13-image77", ""), ("d13-image78", ""), ("d13-image79", ""), ("d13-image80", "")],
-    "tumbledown": [("d16-image86", ""), ("d16-image87", ""), ("d16-image88", ""), ("d16-image89", ""),
-                   ("d17-image93", ""), ("d17-image95", ""), ("d17-image91", ""), ("d17-image90", ""), ("d17-image92", ""),
-                   ("d17-image94", ""), ("d17-image96", ""), ("d18-image97", ""), ("d18-image98", ""), ("d18-image99", ""),
-                   ("d18-image100", ""), ("d18-image101", "")],
+    "puerto-argentino": [("d12-image75", "Llegada a Puerto Argentino"), ("d12-image73", "En un pub del centro"), ("d12-image74", "En un pub del centro"),
+                         ("d12-image76", "Ventana de una residencia «kelper». El cartel dice: «A la Nación Argentina y a su pueblo: serán bienvenidos en nuestro país cuando abandonen su reclamo de soberanía y reconozcan nuestro derecho a la autodeterminación»"),
+                         ("d13-image77", "Ambulancias del hospital nuevo"), ("d13-image78", "Hospital de Puerto Argentino"),
+                         ("d13-image79", "Monumento de conmemoración de los ingleses"), ("d13-image80", "Monumento inglés a Margaret Thatcher")],
+    "tumbledown": [("d16-image86", "Imágenes del campo de batalla, con los cráteres de las explosiones de las bombas del combate"),
+                   ("d16-image87", "Cráteres en el campo de combate"), ("d16-image88", "Cruz en la cima de Tumbledown"), ("d16-image89", "La tripulación en el campo de Tumbledown"),
+                   ("d17-image93", "Cocina de campaña perteneciente al Batallón de Infantería de Marina N.º 5"),
+                   ("d17-image95", "Cocina de campaña perteneciente al Batallón de Infantería de Marina N.º 5"), ("d17-image91", "Otro cráter de explosión del campo de batalla"),
+                   ("d17-image90", "Vaina de munición encontrada en el terreno del campo de batalla"),
+                   ("d17-image92", "Olla de la cocina de campaña, con el escudo del B.I.M. N.º 5"),
+                   ("d17-image94", "Vainas de munición encontradas en el campo"), ("d17-image96", "Vainas de munición encontradas en el campo"), ("d18-image97", "Camino de retorno de Tumbledown a Puerto Argentino, por donde marchó el BIM N.º 5 después de la rendición, con todo su armamento y sin municiones"), ("d18-image98", "La cima de Tumbledown"), ("d18-image99", "Esteban «sufriendo» el viento frío de un 25 de enero al mediodía. Imaginen lo que debe haber sido todo el 13 de junio y la madrugada del 14 de junio de 1982"),
+                   ("d18-image100", "Vista desde Tumbledown a la bahía de Puerto Argentino"), ("d18-image101", "Pozo de zorro entre Tumbledown y Dos Hermanas")],
     "darwin": [("d19-image102", "El cementerio de Darwin"), ("ig/fb-darwin-1", ""), ("ig/fb-darwin-2", ""), ("d19-image103", ""), ("d19-image104", "Soldado argentino solo conocido por Dios"),
                ("d20-image105", ""), ("d20-image106", "")],
-    "garden-point": [("ig/ig-131", "Dos anclas y 100 metros de cadena"), ("d21-image109", ""), ("d21-image107", ""), ("d21-image110", ""), ("d21-image111", "")],
-    "san-julian": [("ig/ig-140", "La pesca del día"), ("ig/ig-141", "Sashimi a bordo"), ("d22-image116", ""), ("d22-image114", ""), ("d22-image115", "")],
-    "caleta-hornos": [("d23-image117", "Fondeados en Caleta Hornos"), ("d23-image118", ""), ("d23-image119", "Mejillones y almejas"),
-                      ("d23-image120", ""), ("d23-image121", ""), ("d23-image122", ""), ("d23-image123", "")],
-    "peninsula-valdes": [("d24-image125", ""), ("d24-image124", ""), ("d25-image126", ""), ("d25-image127", ""),
-                         ("d25-image128", ""), ("d25-image129", ""), ("d25-image130", "")],
-    "el-regreso": [("ig/ig-149", "Y un día… volvimos a casa"), ("d26-image131", ""), ("d26-image133", ""), ("d26-image132", "")],
+    "garden-point": [("d21-image109", ""), ("d21-image107", ""), ("d21-image110", ""), ("d21-image111", "")],
+    "san-julian": [("ig/ig-131", "Dos anclas y 100 metros de cadena: el recupero de la cadena tras la garreada del doble fondeo en San Julián"),
+                   ("d22-image116", "Luego de la garreada y de levantar el fondeo a mano por el enredo, el Cabo de Hornos navegando al muelle comercial de San Julián"),
+                   ("d22-image115", "Amarrados al muelle y a la costa para aguantar los vientos y las olas de algunos chubascos, mientras esperábamos la apertura del puerto para continuar el regreso")],
+    "caleta-hornos": [("d23-image117", "Fondeados en Caleta Hornos"), ("d23-image118", "Recolección de mejillones"), ("d23-image119", "Mejillones y almejas"),
+                      ("d23-image120", "Nico viendo si encontraba algo para arponear"), ("d23-image121", "El gran pescador Pablo Yema con una de sus capturas"), ("d23-image122", "Walter Czeskiavikus, Pablo Yema, Francho, Nicolás Vitale y Jorge Bizet en Caleta Hornos"), ("d23-image123", "Despedida de Caleta Hornos: Francho preparando una «fritata» con la pesca del día"),
+                      ("ig/ig-140", "La pesca del día"), ("ig/ig-141", "Sashimi a bordo")],
+    "peninsula-valdes": [("d24-image125", "El gran marino, el «Indio» Meyer, de gran apoyo logístico para arreglar la caída del motor en el eje y la avería en la caja reductora"), ("d24-image124", "Pérdida de aceite por el retén de la caja, con la avería por la que se salía el manchón"),
+                         ("d25-image126", "Colocación del motor en 2018, sin la contratuerca inferior en las patas del motor: ese fue el motivo del descenso del motor por la vibración"), ("d25-image127", "Alineación del eje del manchón en 2018"),
+                         ("d25-image128", "Reparación de la rotura de la manguera de fijación de la grasera a la bocina del eje, producto del calentamiento por fricción del eje descentrado, con una cámara de bicicleta para evitar la incipiente vía de agua"),
+                         ("d25-image129", "Alineación del eje del manchón en 2024. Nótese la desalineación del motor caído con el manchón del eje"),
+                         ("d25-image130", "Alineación del eje del manchón en 2024. Nótese la desalineación del motor caído con el manchón del eje")],
+    "el-regreso": [("ig/ig-149", "Y un día… volvimos a casa"), ("d26-image131", "Recepción al arribo desde Malvinas en la BNPB: el comodoro Rodrigo Ataun (XXXV promoción del LNMAB) y el comandante de la Flota de Mar, contralmirante Lioi Pombo (XXXIII promoción del LNMAB)"), ("d26-image133", "Ingreso al Río de la Plata con una pizza, especialidad de la casa, junto a Andrea Gatica y Fernando Almada, del Yacht Club Puerto Belgrano"), ("d26-image132", "Cena en el Yacht Club Puerto Belgrano con algunos de sus integrantes")],
     "gracias": [("ig/ig-150", "Gracias, Red Bull"), ("d28-image137", ""), ("d28-image139", ""), ("d28-image138", ""), ("d28-image140", ""), ("d28-image136", "")],
     "sobral": [("d15-image85", "23 de diciembre de 2023: integrantes de la Promoción 90 de la ESNM a bordo del Cabo de Hornos"), ("d15-image83", "")],
 }
@@ -159,7 +177,8 @@ CHAPTERS = [
          + p("Desde ahí se fue armando la decisión del cruce: una ventana de tres días, el archivo GRIB cargado en el plóter y la idea de entrar a Malvinas por el norte. El 19 de enero, por la tarde, soltaron amarras.")),
     dict(slug="el-cruce", title="El cruce a Malvinas", start=date(2024, 1, 19), end=date(2024, 1, 22),
          lead="Rumbo 142 hacia la isla Gran Jason, la más occidental del archipiélago.", videos=["el-cruce", "ig-125", "navegando-a-malvinas"],
-         body=q("Reporte desde el velero cabo de Hornos. Navegando con rumbo 142 hacia la isla Grand Jason al oeste de la Gran Malvina. Viento del 070 de 12 nudos. Con vela Mayor R1 y genoa 1. Velocidad 6 nds. Distancia al WP: 251 MN. Tripulación y embarcación sin novedad. Saludos a la AsoProm 90.", "20 de enero")
+         body=p("La tripulación que cruzó desde la Patagonia a Malvinas: Esteban Casares, Oscar Díaz Thompson, Jorge Bizet, Francho, Leticia Dufau y Walter Czeskiavikus.")
+         + q("Reporte desde el velero cabo de Hornos. Navegando con rumbo 142 hacia la isla Grand Jason al oeste de la Gran Malvina. Viento del 070 de 12 nudos. Con vela Mayor R1 y genoa 1. Velocidad 6 nds. Distancia al WP: 251 MN. Tripulación y embarcación sin novedad. Saludos a la AsoProm 90.", "20 de enero")
          + p("El pronóstico se fue cumpliendo «fielmente». El 21, con 20 nudos del noroeste y 7 nudos de velocidad, la tripulación evaluó ser más agresiva con el rumbo y apuntar más al este. Esa noche quedaban 110 millas a la isla Gran Jason.",
              "Antes de llegar había que cumplir con los requisitos de entrada: avisar por correo 24 horas antes de cruzar la línea de reporte y comunicarse con Stanley Port Control por el canal 15.")
          + q("Malvinas (Islas Jason) a la vista!!! / Ahora rumbo 109 a Cape Dolphin. / 19 hs haremos ceremonia naval por el Aviso Sobral y Cap. Gomez Roca.", "22 de enero, 10 h")),
@@ -178,14 +197,15 @@ CHAPTERS = [
          videos=["darwin-1", "darwin-2", "darwin-3", "fb-darwin-cruz", "tumbledown"], extra_photos=["darwin"],
          body=p("El 24 de enero la tripulación fue al cementerio de Darwin. Entre los nombres grabados está el del capitán de corbeta Sergio Raúl Gómez Roca, comandante del ARA «Alférez Sobral», junto a las cruces de los soldados argentinos «solo conocidos por Dios».")
          + q("Fui a Darwin. Me acorde de vos y recé por aquellos que están ahí.", "26 de enero")
-         + p("El 25 subieron a Tumbledown, donde combatió el Batallón de Infantería de Marina 5. En las piedras todavía quedan restos de aquellos días: vainas, latas y posiciones.")),
+         + p("El 25 subieron a Tumbledown, donde combatió el Batallón de Infantería de Marina 5. En las piedras todavía quedan restos de aquellos días: vainas, latas y posiciones.",
+             "Recomiendo leer el libro «Desde el frente», escrito por el capitán de fragata Carlos Robacio, comandante del BIM N.º 5. "
+             'Y ver <a href="https://www.facebook.com/reel/1284941416729912" target="_blank" rel="noopener noreferrer">este video</a>, en el que él mismo cuenta la historia.')),
     dict(slug="garden-point", title="Garden Point: dos anclas y 120 metros de cadena", start=date(2024, 1, 26), end=date(2024, 1, 28),
          lead="Un nortazo en el fondeo y la decisión de no salir a buscar 45 nudos en el medio del mar.",
          body=p("El 26 zarparon de Puerto Argentino hacia el sudoeste y llegaron a Garden Point con lo último de luz. Esa madrugada el ancla garreó dos veces. Con 37 nudos se tiró la segunda ancla y los 120 metros de cadena, y recién ahí el velero quedó firme.",
                 "El pronóstico anunciaba más de 45 nudos del norte para el 30 de enero, sin tiempo para llegar al continente. La discusión con los asesores en tierra fue franca.")
          + q("Que es lo que hace que tengamos que salir a enfrentar eso? El tiempo de espera no debe ser una variante a analizar... siempre las cosas cambian.", "27 de enero, Garden Point")
-         + p("La decisión fue esperar y moverse dentro del archipiélago hacia el oeste para acortar el cruce de vuelta.", "Ya en el continente, Francho lo resumió en las redes del barco:")
-         + '<blockquote class="inreach-quote">Con 43 nudos de viento y dos anclas engalgadas en 100 mts de cadena, los cambios de corriente por la amplitud de marea, hicieron que la segunda se enganchara en la cadena de la primera. Impidiendo su correcto funcionamiento con el posterior garreo. Levantábamos la última a mano ya que era imposible desarmar la galleta y estábamos a dos cables de la costa.<cite>Instagram @cdhsail · 2 de febrero de 2024</cite></blockquote>'),
+         + p("La decisión fue esperar y moverse dentro del archipiélago hacia el oeste para acortar el cruce de vuelta.")),
     dict(slug="la-vuelta-al-continente", title="La vuelta al continente", start=date(2024, 1, 28), end=date(2024, 1, 31),
          lead="De camino a New Island se abrió la ventana: rumbo directo a San Julián.",
          body=p("El 28 el Cabo de Hornos salió hacia New Island, la isla más occidental. Al amanecer del 29, con el pronóstico más atenuado y a 288 millas de San Julián, se decidió seguir derecho al continente.")
@@ -193,8 +213,10 @@ CHAPTERS = [
          + p("La noche del 30 el motor se paró: no llegaba gasoil. Se desarmó todo el circuito, se cambiaron los filtros y se purgó hasta encontrar la basura. El 31 de enero, con la pleamar, el velero entró a Puerto San Julián.")),
     dict(slug="san-julian", title="San Julián", start=date(2024, 1, 31), end=date(2024, 2, 7),
          lead="Cambio de tripulación y una semana de espera: «nunca se vio tanto norte».", videos=["ig-133"],
-         body=p("En el Club Náutico El Delfín de San Julián hubo cambio de tripulación y, por fin, conexión telefónica. El viento del norte no daba tregua para cruzar el golfo San Jorge, y recién el 7 de febrero el Cabo de Hornos pudo zarpar. Mientras tanto, pesca del día y sashimi a bordo, «mientras esperamos que Eolo nos favorezca».")
-         + q("Acá en San Julian esperando una ventana medianamente tranquila para cruzar el San Jorge... nunca se vio tanto Norte", "4 de febrero")),
+         body=p("En el Club Náutico El Delfín de San Julián hubo cambio de tripulación y, por fin, conexión telefónica. El viento del norte no daba tregua para cruzar el golfo San Jorge, y recién el 7 de febrero el Cabo de Hornos pudo zarpar.")
+         + q("Acá en San Julian esperando una ventana medianamente tranquila para cruzar el San Jorge... nunca se vio tanto Norte", "4 de febrero")
+         + p("En San Julián el doble fondeo también garreó. Francho lo contó en las redes del barco:")
+         + '<blockquote class="inreach-quote">Con 43 nudos de viento y dos anclas engalgadas en 100 mts de cadena, los cambios de corriente por la amplitud de marea, hicieron que la segunda se enganchara en la cadena de la primera. Impidiendo su correcto funcionamiento con el posterior garreo. Levantábamos la última a mano ya que era imposible desarmar la galleta y estábamos a dos cables de la costa.<cite>Instagram @cdhsail · 2 de febrero de 2024</cite></blockquote>'),
     dict(slug="caleta-hornos", title="El golfo San Jorge y Caleta Hornos", start=date(2024, 2, 7), end=date(2024, 2, 12),
          lead="Piloto automático roto, un perno improvisado y dos cabos a tierra en Caleta Hornos.", videos=["regreso-1", "ig-153"],
          body=p("El cruce del golfo San Jorge empezó con el piloto automático fuera de servicio y horas de timón a mano. Ya arreglado, la noche siguiente se partió el bulón que une el brazo del piloto con la caña del sector. Había a bordo con qué improvisar.",
@@ -383,9 +405,10 @@ TIMELINE = [
     ("Abril–junio de 1982", "La guerra", "Al mando del capitán de corbeta Ricardo Ángel Franzosi, el transporte «Cabo de Hornos» es buque logístico: lleva tropa y pertrechos.", "pages/antecedentes.html"),
     ("3 de mayo de 1982", "El «Sobral»", "Un misil destruye el puente del aviso ARA «Alférez Sobral». Mueren el capitán Gómez Roca y siete hombres. Desde el «Cabo de Hornos», su padre quiso ir en su auxilio y no lo dejaron.", "pages/sobral.html"),
     ("Fines de 1982", "Los Super Étendard", "Terminada la guerra, el transporte trae desde Francia los aviones Super Étendard de la Armada.", "pages/antecedentes.html"),
-    ("2017", "La compra", "Llega el velero después de la compra, con el casco azul.", "pages/velero.html"),
+    ("1994", "«La Capitana»", "El velero, de casco de acero, se inscribe en la matrícula nacional con el nombre de «La Capitana».", "pages/velero.html"),
+    ("2017", "La compra", "Se compra el velero, un «one off» del astillero Blue Water, al ingeniero naval Alonso. Llega con el casco azul.", "pages/velero.html"),
     ("2017–2019", "La carroza", "En tierra, Jesús Vinacua le hace las modificaciones de la carroza.", "pages/velero.html"),
-    ("2019–2024", "Sudor I", "Cinco años de preparación para su primera singladura.", "pages/velero.html"),
+    ("2019–2024", "Sudor I", "Pasa a llamarse «Cabo de Hornos». Cinco años de preparación para su primera singladura.", "pages/velero.html"),
     ("2021–2022", "El Atlantis", "Mientras tanto, la expedición en velero de Buenos Aires a la Antártida.", "pages/antecedentes.html"),
     ("Noviembre de 2023", "Prueba de mar", "Buenos Aires – Quequén – Mar del Plata – Buenos Aires.", "pages/velero.html"),
     ("23 de diciembre de 2023", "La Promoción 90 a bordo", "Los compañeros de su padre visitan el velero antes de la partida.", "pages/sobral.html"),
@@ -482,13 +505,34 @@ def build_antecedentes():
         page(1, "pages/antecedentes.html", f"Antecedentes · {SITE}", "Los antecedentes de la travesía: el Liceo Naval, la XXXV, el Atlantis y el transporte ARA Cabo de Hornos.", main), encoding="utf-8")
 
 
+SPECS = [
+    ("Tipo", "Motovelero «one off»"),
+    ("Diseño y construcción", "Astillero Blue Water · Ing. naval Alonso"),
+    ("Casco", "Acero"),
+    ("Eslora", "13,00 m"),
+    ("Manga", "3,90 m"),
+    ("Puntal", "1,85 m"),
+    ("Arqueo", "19 t total · 14 t neto"),
+    ("Matrícula", "REY 026106 · Prefectura Naval Argentina"),
+    ("Inscripción", "1994, como «La Capitana»"),
+    ("Señal distintiva", "LW4177"),
+    ("ISMM (MMSI)", "701001280"),
+    ("Comunicaciones", "VHF con DSC y AIS (B&G) · Garmin inReach satelital"),
+    ("Balsa salvavidas", "8 personas · equipo SOLAS A"),
+]
+
+
 def build_velero():
+    SPECS_ROWS = "".join(f'<div><dt>{html.escape(a)}</dt><dd>{html.escape(b)}</dd></div>' for a, b in SPECS)
     main = f"""<main class="shell" id="contenido">
 <section class="page-hero chapter-hero"><p class="eyebrow">Sudor I</p><h1>El velero Cabo de Hornos</h1>
 <p class="lead">Siete años entre la compra y la primera singladura: la carroza nueva, la pintura, el motor, los interiores y todo lo necesario para llevar el barco al Atlántico Sur.</p></section>
-{draft("completar con la ficha del velero (eslora, astillero, año, motor).")}
+<article class="card prose page-card"><header class="article-heading"><p class="eyebrow">Ficha</p><h2>Un «one off»</h2></header>
+<p>El Cabo de Hornos es un velero único, un «one off»: no salió de una serie sino de un solo proyecto del astillero Blue Water, del ingeniero naval Alonso, que además fue su dueño anterior.</p>
+<p>Es un motovelero de acero de 13 metros de eslora. Se inscribió en la matrícula nacional en 1994 con el nombre de «La Capitana» y en 2019 pasó a llamarse «Cabo de Hornos», como el transporte que el padre de Francho comandaba en 1982.</p>
+<dl class="specs">{SPECS_ROWS}</dl></article>
 <article class="card prose page-card"><header class="article-heading"><p class="eyebrow">2017 · 2019 · 2024</p><h2>De casco azul a «Cabo de Hornos»</h2></header>
-<p>El velero llegó en 2017, después de la compra, con el casco azul que se ve en las primeras fotos. Estuvo en tierra hasta 2019, mientras Jesús Vinacua le hacía las modificaciones de la carroza.</p>
+<p>El velero llegó en 2017, comprado al ingeniero Alonso, con el casco azul que se ve en las primeras fotos. Estuvo en tierra mientras Jesús Vinacua le hacía las modificaciones de la carroza, y en octubre de 2019 volvió al agua.</p>
 <p>Desde 2019 hasta 2024 se preparó para su primera singladura: pintura, motor nuevo, instalaciones, interiores y cada detalle que exige una navegación al Atlántico Sur. Esa singladura fue la travesía a Malvinas.</p></article>
 <article class="card prose page-card"><header class="article-heading"><p class="eyebrow">Noviembre y diciembre de 2023</p><h2>Prueba de mar y últimos preparativos</h2></header>
 <p>En noviembre de 2023 llegó la navegación previa, la prueba de mar: Buenos Aires – Quequén – Mar del Plata – Buenos Aires. El 11 de diciembre llegó la autorización para el viaje y siguieron los últimos preparativos.</p>
@@ -519,6 +563,7 @@ def build_sobral(track):
 <section class="video-grid" aria-label="Video de la ceremonia">{video("ceremonia-sobral", 1, True)}</section>
 <section class="memorial"><p class="eyebrow">22 de enero de 2024 · 19.30 h</p><h2>La ceremonia en el mar</h2>
 <p>El velero navegaba hacia Cape Dolphin con 20 a 24 nudos del oeste. Al llegar a la posición elegida, la tripulación formó en cubierta, se rindieron los honores correspondientes y se arrojó una corona al mar.</p>
+<p>A bordo estaban Esteban Casares, Oscar Díaz Thompson, Jorge Bizet, Francho, Leticia Dufau y Walter Czeskiavikus, la tripulación que cruzó desde la Patagonia.</p>
 <p>Mientras tanto, un grupo de toninas overas y delfines se acercó al barco. Cuando la corona flotaba por la popa, dos toninas saltaron, una a cada lado.</p>
 <p>Esa misma noche salió el mensaje por el inReach: «Ceremonia de rendición de honores a los caídos del aviso ARA Sobral, realizada. Cumpliendo los deseos de los compañeros de la promoción 90 de la ESNM».</p></section>
 {photo_grid("el-homenaje", 1, "Ceremonia en homenaje al ARA Sobral")}
