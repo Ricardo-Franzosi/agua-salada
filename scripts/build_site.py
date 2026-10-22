@@ -158,11 +158,13 @@ CHAPTERS = [
          body=p("«Chau bahía de Núñez»: el Cabo de Hornos zarpó del Centro Naval Núñez a las 4 de la mañana del 3 de enero de 2024, más tarde de lo previsto. La primera prueba del inReach salió frente a Punta Lara, con 16 nudos del ENE y bastante ola «de jeta»: a motor y sin velas.",
                 "La primera noche ya mostró el carácter del río: 25 nudos del este, rizo tres y trinquetilla, tirando bordes para pasar Magdalena. Al amanecer del 4, virando Punta Piedras, la tripulación pudo relajarse un poco.")
          + q("Estamo con R3 y rinquetilla. Mucha ola para motor. Tirando bordes... acá 25 nudos del este. Pasando magdalena", "4 de enero, frente a Magdalena")
+         + p("La tripulación de Núñez a Mar del Plata: Francho, Jorge Bizet, Benjamín Bizet, Florencia Franzosi, Norman Minnell, Oscar Díaz Thompson y Walter Czeskiavikus.")
          + p("Flameaban los gallardetes del Centro Naval, del Yacht Club Neuquén y del CGLNM Alte. Brown. En esa primera pierna iba Benja, el tripulante más joven del Cabo de Hornos, en su primera experiencia oceánica. El río cobró su peaje: una ola se llevó la regala de proa «como recuerdo de despedida del Río de la Plata».")
          + p("Después vinieron la bahía de Samborombón, Punta Médanos y un primer susto: se cortaron los guardines. Se repararon a bordo y el piloto automático siguió andando. El 5 de enero, con las primeras luces, el velero entró a Mar del Plata.")),
     dict(slug="mar-del-plata-y-puerto-belgrano", title="Mar del Plata y Puerto Belgrano", start=date(2024, 1, 5), end=date(2024, 1, 11),
          lead="Una escala en el Centro Naval y un chubasco que obligó a esperar a palo seco.", videos=["rumbo-a-puerto-belgrano", "ig-071", "ig-088"],
          body=p("En Mar del Plata el Cabo de Hornos amarró en el Centro Naval, donde la tripulación almorzó el 5 de enero; a bordo quedaron, de guardia, padre e hijo. La meteorología marcaba un frente para el martes, así que la decisión fue seguir hasta Puerto Belgrano, dejarlo pasar y recién después bajar hacia Camarones.",
+                "En Mar del Plata bajaron Benjamín y Florencia, y subieron Leticia Dufau y Esteban Casares. La tripulación de Mar del Plata a Puerto Belgrano: Francho, Jorge Bizet, Norman Minnell, Oscar Díaz Thompson, Walter Czeskiavikus, Leticia Dufau y Esteban Casares.",
                 "Zarpó la noche del 6 de enero. En la travesía apareció una línea de inestabilidad: 27 nudos de proa que se vieron venir de lejos y se esperaron a palo seco. Frente a Reta, ya con la guardia de la madrugada, el viento volvió a lo previsto.")
          + q("Si. Tuvimos un cubasxo con una línea de inestabilidad que nos puso 27 nudos de Jeta. Ahora está de acuerdo a lo previsto. Tomando la guardia ahora.", "8 de enero, frente a Reta")
          + p("El sudoeste del último tramo obligó a trincar mejor el ancla, que golpeaba con la ola. El velero entró a la Base Naval Puerto Belgrano a la nochecita del 8, gracias a la Asociación Deportiva Argentina de Navegantes y al velero «Azul» de Oscar Isa, y la tripulación durmió en el hotel de la Base. Zarpó el 11 con rumbo sur.")),
@@ -171,7 +173,8 @@ CHAPTERS = [
          body=p("Con viento norte de 20 a 25 nudos y genoa sola, el Cabo de Hornos hizo 145 millas en 24 horas. El pronóstico anunciaba un sudoeste de más de 30 nudos para el domingo 14, y con los amigos que seguían la meteorología desde tierra se decidió esperarlo en Bahía Cracker, en el golfo Nuevo.",
                 "El 13 de enero fondearon detrás de unos cerros amesetados de 400 a 500 metros, en 7 metros de agua y a 300 metros de la costa.")
          + q("El ancla agarró Perfecto. Medialuna en el gráfico del ploter. Aguantó hasta ahora 30 nudos sin chistar.", "14 de enero, Bahía Cracker")
-         + p("Hubo asado a bordo con amigos de Madryn, estreno del gomón y un día de playa para descansar. El 15 levaron el fondeo rumbo al sur.")),
+         + p("Hubo asado a bordo con amigos de Madryn, estreno del gomón y un día de playa para descansar. El 15 levaron el fondeo rumbo al sur.",
+             "En Puerto Belgrano se bajó Norman Minnell, que venía desde Buenos Aires. Desde ahí siguieron Francho, Jorge Bizet, Oscar Díaz Thompson, Walter Czeskiavikus, Leticia Dufau y Esteban Casares, la tripulación que después cruzó a Malvinas.")),
     dict(slug="camarones", title="Camarones, esperando la ventana", start=date(2024, 1, 15), end=date(2024, 1, 19),
          lead="Con alerta de vientos fuertes de Comodoro para abajo, el velero se guardó en Camarones.",
          body=p("La idea inicial era cruzar desde Puerto Deseado, pero la alerta por vientos del sudoeste de 40 nudos para el miércoles y el jueves cambió los planes. El 16 de enero el Cabo de Hornos entró a Camarones para reabastecerse y esperar.")
@@ -216,7 +219,9 @@ CHAPTERS = [
          + p("La noche del 30 el motor se paró: no llegaba gasoil. Se desarmó todo el circuito, se cambiaron los filtros y se purgó hasta encontrar la basura. El 31 de enero, con la pleamar, el velero entró a Puerto San Julián.")),
     dict(slug="san-julian", title="San Julián", start=date(2024, 1, 31), end=date(2024, 2, 7),
          lead="Cambio de tripulación y una semana de espera: «nunca se vio tanto norte».", videos=["ig-133"],
-         body=p("En el Club Náutico El Delfín de San Julián hubo cambio de tripulación y, por fin, conexión telefónica. El viento del norte no daba tregua para cruzar el golfo San Jorge, y recién el 7 de febrero el Cabo de Hornos pudo zarpar.")
+         body=p("En el Club Náutico El Delfín de San Julián hubo cambio de tripulación y, por fin, conexión telefónica. El viento del norte no daba tregua para cruzar el golfo San Jorge, y recién el 7 de febrero el Cabo de Hornos pudo zarpar.",
+                "En San Julián desembarcaron Leticia Dufau, Esteban Casares y Oscar Díaz Thompson, y subieron Pablo Yema y Nicolás Vitale. "
+                "La tripulación de San Julián a Puerto Pirámides: Walter Czeskiavikus, Pablo Yema, Francho, Nicolás Vitale y Jorge Bizet.")
          + q("Acá en San Julian esperando una ventana medianamente tranquila para cruzar el San Jorge... nunca se vio tanto Norte", "4 de febrero")
          + p("En San Julián el doble fondeo también garreó. Francho lo contó en las redes del barco:")
          + '<blockquote class="inreach-quote">Con 43 nudos de viento y dos anclas engalgadas en 100 mts de cadena, los cambios de corriente por la amplitud de marea, hicieron que la segunda se enganchara en la cadena de la primera. Impidiendo su correcto funcionamiento con el posterior garreo. Levantábamos la última a mano ya que era imposible desarmar la galleta y estábamos a dos cables de la costa.<cite>Instagram @cdhsail · 2 de febrero de 2024</cite></blockquote>'),
@@ -230,10 +235,12 @@ CHAPTERS = [
          lead="Ola, viento de proa y una caja que perdía aceite: «esto se está pareciendo a Odiseo».", videos=["regreso-2"],
          body=p("La subida hacia Valdés fue lenta, con viento y ola de proa. El perno del piloto se rompió dos veces más y la caja empezó a perder aceite por el eje. Puerto Pirámides sirvió para cargar agua, víveres y gasoil, y para esperar un sudsudoeste de 50 nudos.")
          + q("Esto se está pareciendo a Odiseo y su viaje", "14 de febrero")
-         + p("El 17 salieron del golfo. La caja perdió 300 mililitros, que se recuperaron y midieron con jeringa.")),
+         + p("El 17 salieron del golfo. La caja perdió 300 mililitros, que se recuperaron y midieron con jeringa.",
+             "La tripulación de Puerto Pirámides a Puerto Belgrano: Walter Czeskiavikus, Gerónimo «Indio» Meyer, Francho y Jorge Bizet.")),
     dict(slug="el-regreso", title="El regreso a casa", start=date(2024, 2, 17), end=date(2024, 2, 24),
          lead="Puerto Belgrano, Necochea a la vista y la llegada a Buenos Aires.",
-         body=p("Con mayor, genoa y apoyo del motor, el Cabo de Hornos subió con días agradables y noches de luna. El 19 de febrero entró por las boyas de la Base Naval Puerto Belgrano y el 21 retomó la navegación.")
+         body=p("Con mayor, genoa y apoyo del motor, el Cabo de Hornos subió con días agradables y noches de luna. El 19 de febrero entró por las boyas de la Base Naval Puerto Belgrano y el 21 retomó la navegación.",
+                "La tripulación de Puerto Belgrano a Núñez: Andrea Gatica, Fernando Almada, Jorge Bizet y Francho.")
          + q("Recibido juan. Vamos muy bien. El chubasco que me dijiste era el que había pasado. Fue una noche muy agradable a buen ritmo", "23 de febrero")
          + p("En Puerto Belgrano, el comodoro Rodrigo Ataun, el contralmirante Gustavo Lioi Pombo y el capitán de navío Daniel Aldama recibieron a la tripulación, que también tuvo el apoyo de los socios del Yacht Club Puerto Belgrano.",
              "El 24 de febrero, a tres horas de Núñez, esperaban en el muelle la familia y los compañeros de promoción de su padre. «Y un día… volvimos a casa».")),
@@ -386,6 +393,16 @@ def build_chapters(track):
         out.write_text(page(2, "pages/bitacora/index.html", f'{ch["title"]} · {SITE}', ch["lead"], main), encoding="utf-8")
 
 
+CREWS = [
+    ("Núñez → Mar del Plata", "3 al 5 de enero", "Francho, Jorge Bizet, Benjamín Bizet, Florencia Franzosi, Norman Minnell, Oscar Díaz Thompson y Walter Czeskiavikus"),
+    ("Mar del Plata → Puerto Belgrano", "6 al 8 de enero", "Francho, Jorge Bizet, Norman Minnell, Oscar Díaz Thompson, Walter Czeskiavikus, Leticia Dufau y Esteban Casares"),
+    ("Puerto Belgrano → Malvinas → San Julián", "11 al 31 de enero", "Francho, Jorge Bizet, Oscar Díaz Thompson, Walter Czeskiavikus, Leticia Dufau y Esteban Casares"),
+    ("San Julián → Puerto Pirámides", "7 al 14 de febrero", "Francho, Jorge Bizet, Walter Czeskiavikus, Pablo Yema y Nicolás Vitale"),
+    ("Puerto Pirámides → Puerto Belgrano", "17 al 19 de febrero", "Francho, Jorge Bizet, Walter Czeskiavikus y Gerónimo «Indio» Meyer"),
+    ("Puerto Belgrano → Núñez", "21 al 24 de febrero", "Francho, Jorge Bizet, Andrea Gatica y Fernando Almada"),
+]
+
+
 def build_bitacora_index(track):
     stages = ""
     for name, desc, a, b in STAGES:
@@ -395,11 +412,18 @@ def build_bitacora_index(track):
                       f'<h3>{ch["title"]}</h3><p>{ch["lead"]}</p><a href="./{ch["slug"]}.html">Leer capítulo →</a></article>')
         stages += (f'<section class="timeline-stage"><header><div><p class="eyebrow">Etapa</p><h2>{name}</h2></div>'
                    f'<p>{desc}</p></header><div class="timeline-grid">{cards}</div></section>')
+    rows = "".join(f'<tr><th scope="row">{html.escape(t)}<small>{html.escape(d)}</small></th><td>{html.escape(c)}</td></tr>' for t, d, c in CREWS)
+    crews = (f'<article class="card prose page-card"><header class="article-heading"><p class="eyebrow">A bordo</p><h2>Las tripulaciones</h2></header>'
+             f'<p>Francho y Jorge Bizet hicieron la travesía completa. El resto de la tripulación fue cambiando de puerto en puerto.</p>'
+             f'<table class="crew-table"><tbody>{rows}</tbody></table></article>')
     main = (f'<main class="shell" id="contenido"><section class="page-hero chapter-hero"><p class="eyebrow">Bitácora</p>'
             f'<h1>Cincuenta y tres días de agua salada</h1><p class="lead">El viaje contado en {len(CHAPTERS)} capítulos, del Centro Naval Núñez a Malvinas y de vuelta, '
-            f'con las palabras que salieron del inReach mientras se navegaba.</p></section>{stages}</main>')
+            f'con las palabras que salieron del inReach mientras se navegaba.</p></section>{stages}{crews}</main>')
     (ROOT / "pages" / "bitacora" / "index.html").write_text(
-        page(2, "pages/bitacora/index.html", f"Bitácora · {SITE}", "Bitácora de la travesía del velero Cabo de Hornos a Malvinas.", main), encoding="utf-8")
+        page(2, "pages/bitacora/index.html", f"Bitácora · {SITE}", "Bitácora de la travesía del velero Cabo de Hornos a Malvinas.", main,
+             extra_head="<style>.crew-table{width:100%;border-collapse:collapse;margin-top:1.2rem}.crew-table th,.crew-table td{padding:.7rem .4rem;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}"
+                        ".crew-table th{color:var(--navy);min-width:180px}.crew-table th small{display:block;color:var(--ink-soft);font-weight:400}.crew-table td{color:#384b51}.crew-table tr:last-child th,.crew-table tr:last-child td{border-bottom:0}"
+                        "@media(max-width:640px){.crew-table th,.crew-table td{display:block;padding:.3rem 0}.crew-table td{padding-bottom:.9rem}}</style>"), encoding="utf-8")
 
 
 TIMELINE = [
