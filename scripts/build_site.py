@@ -145,7 +145,7 @@ CHAPTERS = [
          + p('La historia completa del aviso, del pedido de la Promoción 90 y de la ceremonia está en la página <a href="../sobral.html">Homenaje al ARA «Alférez Sobral»</a>.')),
     dict(slug="puerto-argentino", title="Puerto Argentino", start=date(2024, 1, 23), end=date(2024, 1, 24),
          lead="Más de 30 nudos para fondear, un amarre complicado y una recepción que no esperaban.",
-         body=p("El 23 de enero el Cabo de Hornos cruzó la línea de reporte entre la neblina. Stanley Port Control lo mandó a fondear y esperar instrucciones, con la bandera inglesa y la Q izadas. La bahía lo recibió con más de 30 nudos.")
+         body=p("El 23 de enero el Cabo de Hornos cruzó la línea de reporte entre la neblina. Stanley Port Control lo mandó a fondear y esperar instrucciones, con la bandera de Malvinas y la Q izadas. La bahía lo recibió con más de 30 nudos.")
          + q("Estamos amarrados con el barco al muelle. Lo atraque con más de 30 nudos de viento al lado de unos franceses. Una locura que gracias a dios no rompí nada", "23 de enero, Puerto Argentino")
          + p("La recepción fue «más que amable y cálida», aunque la conexión resultó casi imposible: sin wifi libre ni datos en los chips.")),
     dict(slug="tumbledown-y-darwin", title="Lágrimas: Tumbledown y Darwin", start=date(2024, 1, 24), end=date(2024, 1, 26),
