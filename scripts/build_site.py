@@ -65,7 +65,7 @@ PHOTOS = {
                    ("d04-image15", "Desembarco de los Super Étendard traídos desde Francia por el transporte ARA «Cabo de Hornos», al terminar la guerra"),
                    ("d04-image12", "El escudo del ARA «Cabo de Hornos»"), ("d04-image16", "")],
     "familia": [("d27-image134", ""), ("d27-image135", "")],
-    "sudor1": [("d05-image18", ""), ("d05-image17", ""), ("d05-image19", ""), ("d05-image22", "El casco, de nuevo rojo"),
+    "sudor1": [("d05-image18", "Así lo recibimos en 2017, con el casco azul"), ("d05-image17", ""), ("d05-image19", "El casco azul original"), ("d05-image22", "El casco, de nuevo rojo"),
                ("d05-image20", ""), ("d05-image21", ""), ("d05-image23", ""), ("d05-image24", "")],
     "sudor1b": [("d06-image25", ""), ("d06-image26", ""), ("d06-image27", ""), ("d06-image28", ""), ("d06-image29", ""),
                 ("d06-image30", "El motor nuevo"), ("d06-image36", ""), ("d06-image34", ""), ("d06-image33", ""),
@@ -352,8 +352,11 @@ TIMELINE = [
     ("Abril–junio de 1982", "La guerra", "Al mando del capitán de corbeta Ricardo Ángel Franzosi, el transporte «Cabo de Hornos» es buque logístico: lleva tropa y pertrechos.", "pages/antecedentes.html"),
     ("3 de mayo de 1982", "El «Sobral»", "Un misil destruye el puente del aviso ARA «Alférez Sobral». Mueren el capitán Gómez Roca y siete hombres. Desde el «Cabo de Hornos», su padre quiso ir en su auxilio y no lo dejaron.", "pages/sobral.html"),
     ("Fines de 1982", "Los Super Étendard", "Terminada la guerra, el transporte trae desde Francia los aviones Super Étendard de la Armada.", "pages/antecedentes.html"),
-    ("2021–2022", "El Atlantis", "La expedición en velero de Buenos Aires a la Antártida.", "pages/antecedentes.html"),
-    ("3 de enero de 2024", "La zarpada", "Otro «Cabo de Hornos», ahora un velero, zarpa del Centro Naval Núñez rumbo a Malvinas.", "pages/bitacora/la-zarpada.html"),
+    ("2017", "La compra", "Llega el velero después de la compra, con el casco azul.", "pages/velero.html"),
+    ("2017–2019", "La carroza", "En tierra, Jesús Vinacua le hace las modificaciones de la carroza.", "pages/velero.html"),
+    ("2019–2024", "Sudor I", "Cinco años de preparación para su primera singladura.", "pages/velero.html"),
+    ("2021–2022", "El Atlantis", "Mientras tanto, la expedición en velero de Buenos Aires a la Antártida.", "pages/antecedentes.html"),
+    ("3 de enero de 2024", "La zarpada", "Primera singladura del velero «Cabo de Hornos»: zarpa del Centro Naval Núñez rumbo a Malvinas.", "pages/bitacora/la-zarpada.html"),
     ("22 de enero de 2024", "El homenaje", "Frente a la costa norte de las islas, ceremonia naval por el ARA «Alférez Sobral» y sus caídos.", "pages/sobral.html"),
     ("23 al 26 de enero de 2024", "Las islas", "Puerto Argentino, el cementerio de Darwin y Tumbledown.", "pages/bitacora/tumbledown-y-darwin.html"),
     ("24 de febrero de 2024", "El regreso a Ítaca", "Después de 3.465 millas náuticas, el velero vuelve a Buenos Aires.", "pages/bitacora/el-regreso.html"),
@@ -449,8 +452,11 @@ def build_antecedentes():
 def build_velero():
     main = f"""<main class="shell" id="contenido">
 <section class="page-hero chapter-hero"><p class="eyebrow">Sudor I</p><h1>El velero Cabo de Hornos</h1>
-<p class="lead">Antes de zarpar hubo que transpirar: varada, pintura, motor nuevo, interiores y todo lo necesario para llevar el barco al Atlántico Sur.</p></section>
-{draft("completar con la ficha del velero (eslora, astillero, año, motor) y el relato de los preparativos.")}
+<p class="lead">Siete años entre la compra y la primera singladura: la carroza nueva, la pintura, el motor, los interiores y todo lo necesario para llevar el barco al Atlántico Sur.</p></section>
+{draft("completar con la ficha del velero (eslora, astillero, año, motor).")}
+<article class="card prose page-card"><header class="article-heading"><p class="eyebrow">2017 · 2019 · 2024</p><h2>De casco azul a «Cabo de Hornos»</h2></header>
+<p>El velero llegó en 2017, después de la compra, con el casco azul que se ve en las primeras fotos. Estuvo en tierra hasta 2019, mientras Jesús Vinacua le hacía las modificaciones de la carroza.</p>
+<p>Desde 2019 hasta 2024 se preparó para su primera singladura: pintura, motor nuevo, instalaciones, interiores y cada detalle que exige una navegación al Atlántico Sur. Esa singladura fue la travesía a Malvinas.</p></article>
 <section class="video-grid">{video("preparativos", 1, True)}</section>
 {photo_grid("sudor1", 1, "El velero Cabo de Hornos")}
 {photo_grid("sudor1b", 1, "Preparativos del velero")}
