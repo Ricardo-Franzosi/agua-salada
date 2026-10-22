@@ -14,7 +14,7 @@ from datetime import date
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DRAFT = True  # muestra avisos de borrador; pasar a False antes de publicar
+DRAFT = False  # muestra avisos de borrador; pasar a False antes de publicar
 SITE = "Agua salada"
 SUBTITLE = "Velero Cabo de Hornos · travesía a Malvinas 2024"
 ATLANTIS = "https://ricardo-franzosi.github.io/atlantis-fin-del-mundo/"
