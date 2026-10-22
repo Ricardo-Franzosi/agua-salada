@@ -59,7 +59,7 @@ VIDEOS = {
 PHOTOS = {
     "intro": [("d02-image2", "")],
     "liceo": [("d03-image3", "Liceo Naval Militar «Almirante Guillermo Brown»"), ("d03-image4", "El banderín de la XXXV promoción, con las Malvinas como motivo"),
-              ("d03-image5", "La XXXV"), ("d03-image7", ""), ("d03-image9", ""), ("d03-image8", ""), ("d03-image6", "")],
+              ("d03-image5", "La XXXV"), ("d03-image7", "Ricardo en formación, cadete de primer año en el Liceo Naval (1982)"), ("d03-image9", ""), ("d03-image8", ""), ("d03-image6", "")],
     "atlantis": [("d03-image10", "Con el Atlantis en la Antártida")],
     "transporte": [("d04-image14", "Transporte ARA B-5 «Cabo de Hornos»"), ("d04-image11", "El transporte en un sello postal"),
                    ("d04-image15", "Desembarco de los Super Étendard traídos desde Francia por el transporte ARA «Cabo de Hornos», al terminar la guerra"),
