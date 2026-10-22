@@ -28,7 +28,7 @@ PHASES = [
 LAND = [((-51.6919, -57.8545), datetime(2024, 1, 23, 12, 0), datetime(2024, 1, 26, 4, 0), 1.5)]
 
 MARKERS = [
-    ("Zarpada desde Núñez, Buenos Aires", -34.5365, -58.4526, "2024-01-02"),
+    ("Zarpada del Centro Naval Núñez", -34.5365, -58.4526, "2024-01-03"),
     ("Mar del Plata", -38.0398, -57.5247, "2024-01-05"),
     ("Base Naval Puerto Belgrano", -38.9038, -62.0991, "2024-01-08"),
     ("Bahía Cracker, golfo Nuevo", -42.9457, -64.4909, "2024-01-13"),

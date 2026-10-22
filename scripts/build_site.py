@@ -467,13 +467,13 @@ def build_velero():
 
 def build_sobral(track):
     leaflet = ('<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">'
-               '<style>#mapa-sobral{height:380px;border-radius:18px;margin-top:1.4rem;background:#dce9e8}.leaflet-container img{max-width:none!important}</style>')
+               + LABEL_CSS + '<style>#mapa-sobral{height:380px;border-radius:18px;margin-top:1.4rem;background:#dce9e8}.leaflet-container img{max-width:none!important}</style>')
     marker = next(m for m in track["markers"] if "Sobral" in m["name"])
-    scripts = ('<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script><script src="../data/track.js"></script><script>'
-               "const m=L.map('mapa-sobral',{scrollWheelZoom:false});L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:12,attribution:'&copy; OpenStreetMap'}).addTo(m);"
+    scripts = ('<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script><script src="../data/track.js"></script><script>' + PLACES_JS +
+               "const m=L.map('mapa-sobral',{scrollWheelZoom:false});L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}',{maxZoom:10,attribution:'Fondo &copy; Esri, GEBCO, NOAA, Garmin'}).addTo(m);PLACES.forEach(([n,la,lo,k])=>L.marker([la,lo],{icon:L.divIcon({className:'map-label '+(k||''),html:n,iconSize:null}),interactive:false,keyboard:false}).addTo(m));"
                "const d=TRACK.days.filter(x=>x.date>='2024-01-20'&&x.date<='2024-01-23');d.forEach(x=>L.polyline(x.points,{color:'#1d7181',weight:4}).addTo(m));"
                f"L.circleMarker([{marker['lat']},{marker['lon']}],{{radius:9,color:'#fff',weight:3,fillColor:'#9a6840',fillOpacity:1}}).addTo(m).bindTooltip('Ceremonia · 22 de enero de 2024',{{permanent:true,direction:'top'}});"
-               f"m.setView([{marker['lat']},{marker['lon']}],7);</script>")
+               "m.setView([-51.5,-59.4],7);</script>")
     main = f"""<main class="shell" id="contenido">
 <section class="page-hero chapter-hero"><p class="eyebrow">Lágrimas · Gloria y honor a los muertos por la Patria</p><h1>Homenaje al ARA «Alférez Sobral»</h1>
 <p class="lead">Ceremonia naval en homenaje al capitán Gómez Roca y a la tripulación del aviso ARA «Sobral», el 22 de enero de 2024, frente a la costa norte de Malvinas.</p></section>
@@ -546,9 +546,22 @@ def build_gallery():
              extra_head="<style>.gallery-section h2{margin:1.5rem 0 1rem}</style>"), encoding="utf-8")
 
 
+PLACES_JS = ("const PLACES=["
+             "['Islas Malvinas',-52.55,-59.4,'big'],['Puerto Argentino',-51.69,-57.86,'pt'],"
+             "['Mar Argentino',-47.3,-61.5,'sea'],['Océano Atlántico',-38.5,-53.5,'sea'],"
+             "['Buenos Aires',-34.6,-58.45,'pt'],['Mar del Plata',-38.0,-57.55,'pt'],['Bahía Blanca',-38.72,-62.27,'pt'],"
+             "['Puerto Madryn',-42.77,-65.04,'pt'],['Península Valdés',-42.2,-63.6,'small'],['Camarones',-44.8,-65.71,'pt'],"
+             "['Comodoro Rivadavia',-45.86,-67.48,'pt'],['Puerto Deseado',-47.75,-65.9,'pt'],['San Julián',-49.31,-67.73,'pt'],"
+             "['Río Gallegos',-51.62,-69.22,'pt'],['Tierra del Fuego',-53.9,-68.3,'small']"
+             "];")
+LABEL_CSS = ("<style>.map-label{background:none;border:0;white-space:nowrap;font:600 12px/1.2 Inter,system-ui,sans-serif;color:#33464c;"
+             "text-shadow:0 0 3px #fff,0 0 3px #fff,0 0 3px #fff;transform:translate(-50%,-50%)}.map-label.pt{transform:translate(-100%,-50%);padding-right:9px;text-align:right}.map-label.big{font:700 15px Georgia,serif;color:#0b3440;letter-spacing:.04em}"
+             ".map-label.small{font-size:11px;font-style:italic;color:#5b6d72}.map-label.sea{font:italic 14px Georgia,serif;color:#3c7f90;letter-spacing:.2em;text-transform:uppercase}</style>")
+
+
 CARTO_JS = r"""
 const map=L.map('map',{scrollWheelZoom:false});
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:12,attribution:'&copy; OpenStreetMap contributors'}).addTo(map);
+L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}',{maxZoom:10,attribution:'Fondo &copy; Esri, GEBCO, NOAA, Garmin'}).addTo(map);PLACES.forEach(([n,la,lo,k])=>L.marker([la,lo],{icon:L.divIcon({className:'map-label '+(k||''),html:n,iconSize:null}),interactive:false,keyboard:false}).addTo(map));
 const palette={ida:'#237887',malvinas:'#7256a5',regreso:'#c47743'};const names={ida:'rumbo al sur',malvinas:'Malvinas',regreso:'regreso'};
 const status=document.getElementById('map-status');const esc=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const fmt=v=>new Intl.DateTimeFormat('es-AR',{day:'numeric',month:'short',year:'numeric',timeZone:'UTC'}).format(new Date(v+'T12:00:00Z'));
@@ -589,8 +602,8 @@ def build_cartografia(track):
 <section class="shell" aria-labelledby="escala-titulo"><div class="section-heading"><div><p class="eyebrow">Escalas</p><h2 id="escala-titulo">Puertos y fondeaderos</h2></div></div><div class="stop-list" id="stop-list"></div></section>
 </main>"""
     head = ('<link rel="stylesheet" href="./css/cartografia.css"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">'
-            + NM_STYLE + "<style>.timeline-card{display:grid}</style>")
-    scripts = f'<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script><script src="./data/track.js"></script><script>{CARTO_JS}</script>'
+            + NM_STYLE + LABEL_CSS + "<style>.timeline-card{display:grid}</style>")
+    scripts = f'<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script><script src="./data/track.js"></script><script>{PLACES_JS}{CARTO_JS}</script>'
     (ROOT / "cartografia.html").write_text(
         page(0, "cartografia.html", f"Cartografía · {SITE}", "Recorrido día por día del velero Cabo de Hornos en su travesía a Malvinas.", main, head, scripts), encoding="utf-8")
 
