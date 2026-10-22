@@ -53,6 +53,15 @@ VIDEOS = {
     "darwin-3": ("Darwin", "Recorrido por el cementerio."),
     "regreso-1": ("El regreso", "Sudor II."),
     "regreso-2": ("El regreso", "Sudor II."),
+    "ig-034": ("Conociendo el Cabo de Hornos", "Recorrida por el barco antes de zarpar, 2 de enero de 2024."),
+    "ig-036": ("Chau bahía de Núñez", "4 de la mañana del 3 de enero de 2024."),
+    "ig-071": ("Tenemos compañía", "Delfines rumbo a Puerto Belgrano, 7 de enero."),
+    "ig-088": ("La tormenta", "Viento de popa de 15 nudos y, en minutos, 30 nudos de proa."),
+    "ig-125": ("Toninas overas camino a Malvinas", "Zarpando de Camarones, 19 de enero."),
+    "ig-133": ("Rumbo al muelle de la pesca", "Después de levantar el fondeo en San Julián."),
+    "ig-136": ("Homenaje de la XXXV del Liceo Naval", "En el lugar donde fue atacado el ARA «Sobral», a los caídos por la Patria en estas aguas."),
+    "ig-153": ("Los mejillones de Caleta Hornos", "«Seguimos vivitos y coleando»."),
+    "fb-darwin-cruz": ("Una cruz en Darwin", "Cementerio de Darwin."),
 }
 
 # Fotos por sección: (archivo en assets/images/charla, epígrafe)
@@ -67,15 +76,28 @@ PHOTOS = {
     "familia": [("d27-image134", ""), ("d27-image135", "")],
     "sudor1": [("d05-image18", "Así lo recibimos en 2017, con el casco azul"), ("d05-image17", ""), ("d05-image19", "El casco azul original"), ("d05-image22", "El casco, de nuevo rojo"),
                ("d05-image20", ""), ("d05-image21", ""), ("d05-image23", ""), ("d05-image24", "")],
+    "sudor2023": [("ig/ig-004", "Navegación previa: prueba de mar, noviembre de 2023"), ("ig/ig-005", "Buenos Aires – Quequén – Mar del Plata – Buenos Aires"),
+                  ("ig/ig-006", "Noviembre de 2023, pasando por Mar del Plata"), ("ig/ig-015", "Últimos preparativos rumbo a Malvinas"),
+                  ("ig/ig-016", ""), ("ig/ig-017", ""), ("ig/ig-018", ""), ("ig/ig-001", "Muchas horas de trabajo para llegar hasta hoy"),
+                  ("ig/fb-traje-de-agua", "")],
     "sudor1b": [("d06-image25", ""), ("d06-image26", ""), ("d06-image27", ""), ("d06-image28", ""), ("d06-image29", ""),
                 ("d06-image30", "El motor nuevo"), ("d06-image36", ""), ("d06-image34", ""), ("d06-image33", ""),
                 ("d06-image35", ""), ("d06-image32", ""), ("d06-image31", ""), ("d06-image37", "")],
-    "la-zarpada": [("d03-image6", "Planificando la derrota a bordo del Cabo de Hornos")],
-    "mar-del-plata-y-puerto-belgrano": [("d07-image39", "El Cabo de Hornos en Mar del Plata"), ("d08-image44", ""), ("d08-image45", ""), ("d08-image47", "Asado a bordo"),
+    "la-zarpada": [("d03-image6", "Planificando la derrota a bordo del Cabo de Hornos"), ("ig/ig-033", "Llegó el día: 2 de enero de 2024"),
+                   ("ig/ig-040", "Flamean los gallardetes del Centro Naval, el Yacht Club Neuquén y el CGLNM Alte. Brown"),
+                   ("ig/ig-039", "En navegación frente a La Plata")],
+    "mar-del-plata-y-puerto-belgrano": [("d07-image39", "El Cabo de Hornos en Mar del Plata"), ("ig/ig-051", "Almorzando en el Centro Naval de Mar del Plata"),
+                                        ("ig/ig-052", "Padre e hijo de guardia"), ("ig/ig-067", "Postales marplatenses"),
+                                        ("ig/ig-060", "Preparando la siguiente pierna"), ("ig/ig-063", ""),
+                                        ("ig/ig-080", "Llegada a la Base Naval Puerto Belgrano"), ("ig/ig-081", "Hotel de la Base Naval Puerto Belgrano"),
+                                        ("ig/ig-086", ""), ("ig/ig-089", "Atardeceres arriba del Cabo de Hornos"), ("ig/ig-090", ""), ("ig/ig-092", ""), ("d08-image44", ""), ("d08-image45", ""), ("d08-image47", "Asado a bordo"),
                                         ("d08-image46", ""), ("d08-image48", ""), ("d08-image49", ""), ("d08-image50", "")],
-    "bahia-cracker": [("d09-image51", "El Cabo de Hornos fondeado"), ("d09-image53", ""), ("d09-image54", ""),
+    "bahia-cracker": [("d09-image51", "El Cabo de Hornos fondeado"), ("ig/ig-097", "Tarde de backgammon"), ("ig/ig-098", ""),
+                      ("ig/ig-099", ""), ("ig/ig-100", ""), ("d09-image53", ""), ("d09-image54", ""),
                       ("d09-image55", ""), ("d09-image56", ""), ("d09-image57", ""), ("d09-image58", "")],
-    "camarones": [("d10-image60", ""), ("d10-image59", ""), ("d10-image62", ""), ("d10-image67", ""), ("d10-image64", ""),
+    "camarones": [("ig/ig-103", "Gracias, Finca Lolita y Famille Bizet"), ("ig/ig-109", "Pingüinera de Cabo Dos Bahías"), ("ig/ig-110", ""),
+                  ("ig/ig-111", ""), ("ig/ig-112", ""), ("ig/ig-116", "Bahía Melo"), ("ig/ig-119", "En la cava de Alma Patagónica"),
+                  ("ig/ig-121", "Chau Camarones"), ("d10-image60", ""), ("d10-image59", ""), ("d10-image62", ""), ("d10-image67", ""), ("d10-image64", ""),
                   ("d10-image65", ""), ("d10-image61", ""), ("d10-image63", ""), ("d10-image66", "")],
     "el-cruce": [("d11-image71", "Puerto Argentino a la vista"), ("d11-image68", "")],
     "el-homenaje": [("d15-image82", "Ceremonia en honor al capitán Gómez Roca y sus hombres caídos en el ARA «Sobral»")],
@@ -85,17 +107,17 @@ PHOTOS = {
                    ("d17-image93", ""), ("d17-image95", ""), ("d17-image91", ""), ("d17-image90", ""), ("d17-image92", ""),
                    ("d17-image94", ""), ("d17-image96", ""), ("d18-image97", ""), ("d18-image98", ""), ("d18-image99", ""),
                    ("d18-image100", ""), ("d18-image101", "")],
-    "darwin": [("d19-image102", "El cementerio de Darwin"), ("d19-image103", ""), ("d19-image104", "Soldado argentino solo conocido por Dios"),
+    "darwin": [("d19-image102", "El cementerio de Darwin"), ("ig/fb-darwin-1", ""), ("ig/fb-darwin-2", ""), ("d19-image103", ""), ("d19-image104", "Soldado argentino solo conocido por Dios"),
                ("d20-image105", ""), ("d20-image106", "")],
-    "garden-point": [("d21-image109", ""), ("d21-image107", ""), ("d21-image110", ""), ("d21-image111", "")],
-    "san-julian": [("d22-image116", ""), ("d22-image114", ""), ("d22-image115", "")],
+    "garden-point": [("ig/ig-131", "Dos anclas y 100 metros de cadena"), ("d21-image109", ""), ("d21-image107", ""), ("d21-image110", ""), ("d21-image111", "")],
+    "san-julian": [("ig/ig-140", "La pesca del día"), ("ig/ig-141", "Sashimi a bordo"), ("d22-image116", ""), ("d22-image114", ""), ("d22-image115", "")],
     "caleta-hornos": [("d23-image117", "Fondeados en Caleta Hornos"), ("d23-image118", ""), ("d23-image119", "Mejillones y almejas"),
                       ("d23-image120", ""), ("d23-image121", ""), ("d23-image122", ""), ("d23-image123", "")],
     "peninsula-valdes": [("d24-image125", ""), ("d24-image124", ""), ("d25-image126", ""), ("d25-image127", ""),
                          ("d25-image128", ""), ("d25-image129", ""), ("d25-image130", "")],
-    "el-regreso": [("d26-image131", ""), ("d26-image133", ""), ("d26-image132", "")],
-    "gracias": [("d28-image137", ""), ("d28-image139", ""), ("d28-image138", ""), ("d28-image140", ""), ("d28-image136", "")],
-    "sobral": [("d15-image83", ""), ("d15-image85", "")],
+    "el-regreso": [("ig/ig-149", "Y un día… volvimos a casa"), ("d26-image131", ""), ("d26-image133", ""), ("d26-image132", "")],
+    "gracias": [("ig/ig-150", "Gracias, Red Bull"), ("d28-image137", ""), ("d28-image139", ""), ("d28-image138", ""), ("d28-image140", ""), ("d28-image136", "")],
+    "sobral": [("d15-image85", "23 de diciembre de 2023: integrantes de la Promoción 90 de la ESNM a bordo del Cabo de Hornos"), ("d15-image83", "")],
 }
 
 
@@ -111,17 +133,18 @@ def p(*paras):
 
 CHAPTERS = [
     dict(slug="la-zarpada", title="La zarpada y el Río de la Plata", start=date(2024, 1, 3), end=date(2024, 1, 5),
-         lead="Del Centro Naval Núñez a Mar del Plata, con viento y ola de proa desde la primera noche.", videos=["zarpada"],
-         body=p("El Cabo de Hornos zarpó del Centro Naval Núñez en la madrugada del 3 de enero de 2024, más tarde de lo previsto. La primera prueba del inReach salió frente a Punta Lara, con 16 nudos del ENE y bastante ola «de jeta»: a motor y sin velas.",
+         lead="Del Centro Naval Núñez a Mar del Plata, con viento y ola de proa desde la primera noche.", videos=["ig-036", "zarpada"],
+         body=p("«Chau bahía de Núñez»: el Cabo de Hornos zarpó del Centro Naval Núñez a las 4 de la mañana del 3 de enero de 2024, más tarde de lo previsto. La primera prueba del inReach salió frente a Punta Lara, con 16 nudos del ENE y bastante ola «de jeta»: a motor y sin velas.",
                 "La primera noche ya mostró el carácter del río: 25 nudos del este, rizo tres y trinquetilla, tirando bordes para pasar Magdalena. Al amanecer del 4, virando Punta Piedras, la tripulación pudo relajarse un poco.")
          + q("Estamo con R3 y rinquetilla. Mucha ola para motor. Tirando bordes... acá 25 nudos del este. Pasando magdalena", "4 de enero, frente a Magdalena")
+         + p("Flameaban los gallardetes del Centro Naval, del Yacht Club Neuquén y del CGLNM Alte. Brown. En esa primera pierna iba Benja, el tripulante más joven del Cabo de Hornos, en su primera experiencia oceánica. El río cobró su peaje: una ola se llevó la regala de proa «como recuerdo de despedida del Río de la Plata».")
          + p("Después vinieron la bahía de Samborombón, Punta Médanos y un primer susto: se cortaron los guardines. Se repararon a bordo y el piloto automático siguió andando. El 5 de enero, con las primeras luces, el velero entró a Mar del Plata.")),
     dict(slug="mar-del-plata-y-puerto-belgrano", title="Mar del Plata y Puerto Belgrano", start=date(2024, 1, 5), end=date(2024, 1, 11),
-         lead="Una escala en el Centro Naval y un chubasco que obligó a esperar a palo seco.", videos=["rumbo-a-puerto-belgrano"],
-         body=p("En Mar del Plata el Cabo de Hornos amarró en el Centro Naval. La meteorología marcaba un frente para el martes, así que la decisión fue seguir hasta Puerto Belgrano, dejarlo pasar y recién después bajar hacia Camarones.",
+         lead="Una escala en el Centro Naval y un chubasco que obligó a esperar a palo seco.", videos=["rumbo-a-puerto-belgrano", "ig-071", "ig-088"],
+         body=p("En Mar del Plata el Cabo de Hornos amarró en el Centro Naval, donde la tripulación almorzó el 5 de enero; a bordo quedaron, de guardia, padre e hijo. La meteorología marcaba un frente para el martes, así que la decisión fue seguir hasta Puerto Belgrano, dejarlo pasar y recién después bajar hacia Camarones.",
                 "Zarpó la noche del 6 de enero. En la travesía apareció una línea de inestabilidad: 27 nudos de proa que se vieron venir de lejos y se esperaron a palo seco. Frente a Reta, ya con la guardia de la madrugada, el viento volvió a lo previsto.")
          + q("Si. Tuvimos un cubasxo con una línea de inestabilidad que nos puso 27 nudos de Jeta. Ahora está de acuerdo a lo previsto. Tomando la guardia ahora.", "8 de enero, frente a Reta")
-         + p("El sudoeste del último tramo obligó a trincar mejor el ancla, que golpeaba con la ola. El velero entró a la Base Naval Puerto Belgrano a la nochecita del 8 y zarpó el 11 con rumbo sur.")),
+         + p("El sudoeste del último tramo obligó a trincar mejor el ancla, que golpeaba con la ola. El velero entró a la Base Naval Puerto Belgrano a la nochecita del 8, gracias a la Asociación Deportiva Argentina de Navegantes y al velero «Azul» de Oscar Isa, y la tripulación durmió en el hotel de la Base. Zarpó el 11 con rumbo sur.")),
     dict(slug="bahia-cracker", title="Los golfos y Bahía Cracker", start=date(2024, 1, 11), end=date(2024, 1, 15),
          lead="Ciento cuarenta y cinco millas en un día y un fondeadero que aguantó 30 nudos sin chistar.",
          body=p("Con viento norte de 20 a 25 nudos y genoa sola, el Cabo de Hornos hizo 145 millas en 24 horas. El pronóstico anunciaba un sudoeste de más de 30 nudos para el domingo 14, y con los amigos que seguían la meteorología desde tierra se decidió esperarlo en Bahía Cracker, en el golfo Nuevo.",
@@ -132,9 +155,10 @@ CHAPTERS = [
          lead="Con alerta de vientos fuertes de Comodoro para abajo, el velero se guardó en Camarones.",
          body=p("La idea inicial era cruzar desde Puerto Deseado, pero la alerta por vientos del sudoeste de 40 nudos para el miércoles y el jueves cambió los planes. El 16 de enero el Cabo de Hornos entró a Camarones para reabastecerse y esperar.")
          + q("Hola fernando / Acá guardados en Camarones. / Lugar hermoso.", "17 de enero, Camarones")
+         + p("Hubo tiempo para conocer la pingüinera de Cabo Dos Bahías y Bahía Melo, y para brindar con los vinos de Finca Lolita y Famille Bizet, que acompañaron todo el viaje.")
          + p("Desde ahí se fue armando la decisión del cruce: una ventana de tres días, el archivo GRIB cargado en el plóter y la idea de entrar a Malvinas por el norte. El 19 de enero, por la tarde, soltaron amarras.")),
     dict(slug="el-cruce", title="El cruce a Malvinas", start=date(2024, 1, 19), end=date(2024, 1, 22),
-         lead="Rumbo 142 hacia la isla Gran Jason, la más occidental del archipiélago.", videos=["el-cruce", "navegando-a-malvinas"],
+         lead="Rumbo 142 hacia la isla Gran Jason, la más occidental del archipiélago.", videos=["el-cruce", "ig-125", "navegando-a-malvinas"],
          body=q("Reporte desde el velero cabo de Hornos. Navegando con rumbo 142 hacia la isla Grand Jason al oeste de la Gran Malvina. Viento del 070 de 12 nudos. Con vela Mayor R1 y genoa 1. Velocidad 6 nds. Distancia al WP: 251 MN. Tripulación y embarcación sin novedad. Saludos a la AsoProm 90.", "20 de enero")
          + p("El pronóstico se fue cumpliendo «fielmente». El 21, con 20 nudos del noroeste y 7 nudos de velocidad, la tripulación evaluó ser más agresiva con el rumbo y apuntar más al este. Esa noche quedaban 110 millas a la isla Gran Jason.",
              "Antes de llegar había que cumplir con los requisitos de entrada: avisar por correo 24 horas antes de cruzar la línea de reporte y comunicarse con Stanley Port Control por el canal 15.")
@@ -151,7 +175,7 @@ CHAPTERS = [
          + p("La recepción fue «más que amable y cálida», aunque la conexión resultó casi imposible: sin wifi libre ni datos en los chips.")),
     dict(slug="tumbledown-y-darwin", title="Lágrimas: Tumbledown y Darwin", start=date(2024, 1, 24), end=date(2024, 1, 26),
          lead="El cementerio de Darwin y el monte donde combatió el BIM 5. Gloria y honor a los muertos por la Patria.",
-         videos=["darwin-1", "darwin-2", "darwin-3", "tumbledown"], extra_photos=["darwin"],
+         videos=["darwin-1", "darwin-2", "darwin-3", "fb-darwin-cruz", "tumbledown"], extra_photos=["darwin"],
          body=p("El 24 de enero la tripulación fue al cementerio de Darwin. Entre los nombres grabados está el del capitán de corbeta Sergio Raúl Gómez Roca, comandante del ARA «Alférez Sobral», junto a las cruces de los soldados argentinos «solo conocidos por Dios».")
          + q("Fui a Darwin. Me acorde de vos y recé por aquellos que están ahí.", "26 de enero")
          + p("El 25 subieron a Tumbledown, donde combatió el Batallón de Infantería de Marina 5. En las piedras todavía quedan restos de aquellos días: vainas, latas y posiciones.")),
@@ -160,18 +184,19 @@ CHAPTERS = [
          body=p("El 26 zarparon de Puerto Argentino hacia el sudoeste y llegaron a Garden Point con lo último de luz. Esa madrugada el ancla garreó dos veces. Con 37 nudos se tiró la segunda ancla y los 120 metros de cadena, y recién ahí el velero quedó firme.",
                 "El pronóstico anunciaba más de 45 nudos del norte para el 30 de enero, sin tiempo para llegar al continente. La discusión con los asesores en tierra fue franca.")
          + q("Que es lo que hace que tengamos que salir a enfrentar eso? El tiempo de espera no debe ser una variante a analizar... siempre las cosas cambian.", "27 de enero, Garden Point")
-         + p("La decisión fue esperar y moverse dentro del archipiélago hacia el oeste para acortar el cruce de vuelta.")),
+         + p("La decisión fue esperar y moverse dentro del archipiélago hacia el oeste para acortar el cruce de vuelta.", "Ya en el continente, Francho lo resumió en las redes del barco:")
+         + '<blockquote class="inreach-quote">Con 43 nudos de viento y dos anclas engalgadas en 100 mts de cadena, los cambios de corriente por la amplitud de marea, hicieron que la segunda se enganchara en la cadena de la primera. Impidiendo su correcto funcionamiento con el posterior garreo. Levantábamos la última a mano ya que era imposible desarmar la galleta y estábamos a dos cables de la costa.<cite>Instagram @cdhsail · 2 de febrero de 2024</cite></blockquote>'),
     dict(slug="la-vuelta-al-continente", title="La vuelta al continente", start=date(2024, 1, 28), end=date(2024, 1, 31),
          lead="De camino a New Island se abrió la ventana: rumbo directo a San Julián.",
          body=p("El 28 el Cabo de Hornos salió hacia New Island, la isla más occidental. Al amanecer del 29, con el pronóstico más atenuado y a 288 millas de San Julián, se decidió seguir derecho al continente.")
          + q("Genial. Todo ok. Picada, chori, colita a la parrilla, ensalada, papa al horno, vino, mantecol, truco, negro, siesta.", "29 de enero, en el cruce")
          + p("La noche del 30 el motor se paró: no llegaba gasoil. Se desarmó todo el circuito, se cambiaron los filtros y se purgó hasta encontrar la basura. El 31 de enero, con la pleamar, el velero entró a Puerto San Julián.")),
     dict(slug="san-julian", title="San Julián", start=date(2024, 1, 31), end=date(2024, 2, 7),
-         lead="Cambio de tripulación y una semana de espera: «nunca se vio tanto norte».",
-         body=p("En el Club Náutico El Delfín de San Julián hubo cambio de tripulación y, por fin, conexión telefónica. El viento del norte no daba tregua para cruzar el golfo San Jorge, y recién el 7 de febrero el Cabo de Hornos pudo zarpar.")
+         lead="Cambio de tripulación y una semana de espera: «nunca se vio tanto norte».", videos=["ig-133"],
+         body=p("En el Club Náutico El Delfín de San Julián hubo cambio de tripulación y, por fin, conexión telefónica. El viento del norte no daba tregua para cruzar el golfo San Jorge, y recién el 7 de febrero el Cabo de Hornos pudo zarpar. Mientras tanto, pesca del día y sashimi a bordo, «mientras esperamos que Eolo nos favorezca».")
          + q("Acá en San Julian esperando una ventana medianamente tranquila para cruzar el San Jorge... nunca se vio tanto Norte", "4 de febrero")),
     dict(slug="caleta-hornos", title="El golfo San Jorge y Caleta Hornos", start=date(2024, 2, 7), end=date(2024, 2, 12),
-         lead="Piloto automático roto, un perno improvisado y dos cabos a tierra en Caleta Hornos.", videos=["regreso-1"],
+         lead="Piloto automático roto, un perno improvisado y dos cabos a tierra en Caleta Hornos.", videos=["regreso-1", "ig-153"],
          body=p("El cruce del golfo San Jorge empezó con el piloto automático fuera de servicio y horas de timón a mano. Ya arreglado, la noche siguiente se partió el bulón que une el brazo del piloto con la caña del sector. Había a bordo con qué improvisar.",
                 "El 10 de febrero el velero se refugió en Caleta Hornos para dejar pasar un sudoeste de 40 nudos: fondeo y dos cabos a tierra, sin olas, tapados por los cerros.")
          + q("El anemómetro llegó a 38 nudos... bien guardados!!", "12 de febrero, Caleta Hornos")
@@ -185,7 +210,8 @@ CHAPTERS = [
          lead="Puerto Belgrano, Necochea a la vista y la llegada a Buenos Aires.",
          body=p("Con mayor, genoa y apoyo del motor, el Cabo de Hornos subió con días agradables y noches de luna. El 19 de febrero entró por las boyas de la Base Naval Puerto Belgrano y el 21 retomó la navegación.")
          + q("Recibido juan. Vamos muy bien. El chubasco que me dijiste era el que había pasado. Fue una noche muy agradable a buen ritmo", "23 de febrero")
-         + p("El 24 de febrero, a tres horas de Núñez, esperaban en el muelle la familia y los compañeros de promoción de su padre.")),
+         + p("En Puerto Belgrano, el comodoro Rodrigo Ataun, el contralmirante Gustavo Lioi Pombo y el capitán de navío Daniel Aldama recibieron a la tripulación, que también tuvo el apoyo de los socios del Yacht Club Puerto Belgrano.",
+             "El 24 de febrero, a tres horas de Núñez, esperaban en el muelle la familia y los compañeros de promoción de su padre. «Y un día… volvimos a casa».")),
 ]
 
 THANKS = [
@@ -247,12 +273,17 @@ def draft(text):
     return f'<p class="draft-note"><strong>Borrador:</strong> {text}</p>' if DRAFT else ""
 
 
+def photo_path(name):
+    """Las fotos de la charla van sin carpeta; las de redes, como "ig/ig-051"."""
+    return f"assets/images/{name}.jpg" if "/" in name else f"assets/images/charla/{name}.jpg"
+
+
 def photo_src(name, depth):
-    return f"{rel(depth)}assets/images/charla/{name}.jpg"
+    return f"{rel(depth)}{photo_path(name)}"
 
 
 def photo(name, caption, depth, alt=""):
-    if not (ROOT / "assets/images/charla" / f"{name}.jpg").exists():
+    if not (ROOT / photo_path(name)).exists():
         return f'<div class="media-pending"><strong>Foto pendiente</strong><span>{html.escape(name)}</span></div>'
     cap = f"<figcaption><span>{html.escape(caption)}</span></figcaption>" if caption else ""
     return (f'<figure class="photo-card"><a href="{photo_src(name, depth)}"><img src="{photo_src(name, depth)}" '
@@ -356,7 +387,9 @@ TIMELINE = [
     ("2017–2019", "La carroza", "En tierra, Jesús Vinacua le hace las modificaciones de la carroza.", "pages/velero.html"),
     ("2019–2024", "Sudor I", "Cinco años de preparación para su primera singladura.", "pages/velero.html"),
     ("2021–2022", "El Atlantis", "Mientras tanto, la expedición en velero de Buenos Aires a la Antártida.", "pages/antecedentes.html"),
-    ("3 de enero de 2024", "La zarpada", "Primera singladura del velero «Cabo de Hornos»: zarpa del Centro Naval Núñez rumbo a Malvinas.", "pages/bitacora/la-zarpada.html"),
+    ("Noviembre de 2023", "Prueba de mar", "Buenos Aires – Quequén – Mar del Plata – Buenos Aires.", "pages/velero.html"),
+    ("23 de diciembre de 2023", "La Promoción 90 a bordo", "Los compañeros de su padre visitan el velero antes de la partida.", "pages/sobral.html"),
+    ("3 de enero de 2024", "La zarpada", "Primera singladura del velero «Cabo de Hornos»: a las 4 de la mañana zarpa del Centro Naval Núñez rumbo a Malvinas.", "pages/bitacora/la-zarpada.html"),
     ("22 de enero de 2024", "El homenaje", "Frente a la costa norte de las islas, ceremonia naval por el ARA «Alférez Sobral» y sus caídos.", "pages/sobral.html"),
     ("23 al 26 de enero de 2024", "Las islas", "Puerto Argentino, el cementerio de Darwin y Tumbledown.", "pages/bitacora/tumbledown-y-darwin.html"),
     ("24 de febrero de 2024", "El regreso a Ítaca", "Después de 3.465 millas náuticas, el velero vuelve a Buenos Aires.", "pages/bitacora/el-regreso.html"),
@@ -457,6 +490,11 @@ def build_velero():
 <article class="card prose page-card"><header class="article-heading"><p class="eyebrow">2017 · 2019 · 2024</p><h2>De casco azul a «Cabo de Hornos»</h2></header>
 <p>El velero llegó en 2017, después de la compra, con el casco azul que se ve en las primeras fotos. Estuvo en tierra hasta 2019, mientras Jesús Vinacua le hacía las modificaciones de la carroza.</p>
 <p>Desde 2019 hasta 2024 se preparó para su primera singladura: pintura, motor nuevo, instalaciones, interiores y cada detalle que exige una navegación al Atlántico Sur. Esa singladura fue la travesía a Malvinas.</p></article>
+<article class="card prose page-card"><header class="article-heading"><p class="eyebrow">Noviembre y diciembre de 2023</p><h2>Prueba de mar y últimos preparativos</h2></header>
+<p>En noviembre de 2023 llegó la navegación previa, la prueba de mar: Buenos Aires – Quequén – Mar del Plata – Buenos Aires. El 11 de diciembre llegó la autorización para el viaje y siguieron los últimos preparativos.</p>
+<p>El 23 de diciembre subieron a bordo integrantes de la Promoción 90 de la ESNM, «compañeros del verdadero comandante del ARA “Cabo de Hornos”». El 2 de enero de 2024, por fin: «¡Llegó el día!».</p></article>
+<section class="video-grid">{video("ig-034", 1, True)}</section>
+{photo_grid("sudor2023", 1, "Prueba de mar y preparativos")}
 <section class="video-grid">{video("preparativos", 1, True)}</section>
 {photo_grid("sudor1", 1, "El velero Cabo de Hornos")}
 {photo_grid("sudor1b", 1, "Preparativos del velero")}
@@ -484,6 +522,9 @@ def build_sobral(track):
 <p>Mientras tanto, un grupo de toninas overas y delfines se acercó al barco. Cuando la corona flotaba por la popa, dos toninas saltaron, una a cada lado.</p>
 <p>Esa misma noche salió el mensaje por el inReach: «Ceremonia de rendición de honores a los caídos del aviso ARA Sobral, realizada. Cumpliendo los deseos de los compañeros de la promoción 90 de la ESNM».</p></section>
 {photo_grid("el-homenaje", 1, "Ceremonia en homenaje al ARA Sobral")}
+<article class="card prose page-card"><header class="article-heading"><p class="eyebrow">En la misma ceremonia</p><h2>El homenaje de la XXXV del Liceo Naval</h2></header>
+<p>La XXXV promoción del Liceo Naval Militar «Almirante Guillermo Brown», la que ingresó en 1982, sumó su homenaje a los caídos por la Patria en estas aguas.</p></article>
+<section class="video-grid">{video("ig-136", 1, True)}</section>
 <article class="card prose page-card"><header class="article-heading"><p class="eyebrow">El aviso</p><h2>El ARA «Alférez Sobral»</h2></header>
 <p>El aviso ARA «Alférez Sobral» (A-9) había sido el remolcador de flota USS «Salish» (ATA-187), botado en 1944 en Orange, Texas, e incorporado a la Armada Argentina en 1972. Llevaba el nombre del alférez José María Sobral, el primer marino argentino que invernó en la Antártida.</p>
 <p>El sábado 1 de mayo de 1982 un Canberra de la Fuerza Aérea fue derribado a unas 100 millas al norte del estrecho de San Carlos, y el «Sobral», que operaba en la zona, recibió la orden de buscar y rescatar a sus dos tripulantes.</p>
@@ -495,7 +536,7 @@ def build_sobral(track):
 <ul class="fallen-list"><li>Sergio Raúl Gómez Roca<small>Capitán de corbeta · Comandante</small></li><li>Claudio Olivieri<small>Guardiamarina</small></li><li>Mario Alancay<small>Cabo principal</small></li><li>Daniel Tonina<small>Cabo segundo</small></li><li>Sergio Medina<small>Cabo segundo</small></li><li>Ernesto Del Monte<small>Cabo segundo</small></li><li>Héctor Dufrechou<small>Marinero</small></li><li>Roberto D’Errico<small>Conscripto</small></li></ul>
 <p>Y un ruego por la tripulación del ARA «San Juan», en patrulla permanente en el Mar Argentino.</p></section>
 <article class="card prose page-card"><header class="article-heading"><p class="eyebrow">El pedido</p><h2>La Promoción 90 y el transporte «Cabo de Hornos»</h2></header>
-<p>La ceremonia fue un pedido de los compañeros de la Promoción 90 de la ESNM. Gracias a ellos, por concedernos el honor de hacerlo.</p>
+<p>La ceremonia fue un pedido de los compañeros de la Promoción 90 de la ESNM. El 23 de diciembre de 2023, antes de zarpar, varios de ellos subieron a bordo: «compañeros del verdadero comandante del ARA “Cabo de Hornos”. Un honor para nosotros que nos hayan visitado, y deseosos de poder cumplir su deseo». Gracias a ellos, por concedernos el honor de hacerlo.</p>
 <p>La historia tenía además un hilo familiar: durante la guerra, el padre de Francho comandaba el transporte ARA «Cabo de Hornos». Desde el mar, Francho lo escribió así:</p>
 {q("Alguna vez papá contó que estaba navegando cerca y quiso ir a auxiliar al Sobral con el \"Cabo de Hornos\" y no lo dejaron... Creo que si vio esto desde arriba estará contento que el \"Cabo de Hornos\" pudo ir a ver así compañero. Gracias por permitirnos ser parte de vuestro homenaje a su compañero. Será un honor que atesoraremos en nuestro corazón toda la vida!", "22 de enero de 2024")}
 <p>Al regreso, el 24 de febrero, en el muelle esperaban la familia y los compañeros de promoción de su padre.</p></article>
@@ -516,7 +557,8 @@ def build_gracias():
 <section class="page-hero chapter-hero"><p class="eyebrow">Gracias</p><h1>Muchas gracias</h1>
 <p class="lead">A quienes nos recibieron, nos ayudaron y nos siguieron desde tierra.</p></section>
 <article class="card prose page-card"><dl class="specs thanks">{rows}</dl>
-<p>Y a la Promoción 90 de la ESNM, por concedernos el honor del homenaje, y a todos los que siguieron el viaje mensaje a mensaje.</p></article>
+<p>Y a la Promoción 90 de la ESNM, por concedernos el honor del homenaje, y a todos los que siguieron el viaje mensaje a mensaje.</p>
+<p>Acompañaron la travesía: Finca Lolita y Famille Bizet, Finca Ambrosía, Dos Anclas, Clan Issime, Mieles Santos, Georgalos y Red Bull.</p></article>
 {photo_grid("gracias", 1, "Agradecimientos")}
 </main>"""
     (ROOT / "pages" / "gracias.html").write_text(
@@ -526,8 +568,9 @@ def build_gracias():
 
 def build_videos():
     cards = "".join(video(v, 1, featured=(v == "ceremonia-sobral")) for v in
-                    ["ceremonia-sobral", "navegando-a-malvinas", "zarpada", "rumbo-a-puerto-belgrano", "el-cruce",
-                     "tumbledown", "darwin-1", "darwin-2", "darwin-3", "preparativos", "regreso-1", "regreso-2"])
+                    ["ceremonia-sobral", "ig-136", "navegando-a-malvinas", "ig-034", "ig-036", "zarpada", "rumbo-a-puerto-belgrano", "ig-071", "ig-088",
+                     "el-cruce", "ig-125", "tumbledown", "darwin-1", "darwin-2", "darwin-3", "fb-darwin-cruz", "preparativos", "ig-133",
+                     "regreso-1", "ig-153", "regreso-2"])
     main = (f'<main class="shell" id="contenido"><section class="page-hero chapter-hero"><p class="eyebrow">Videos</p><h1>El viaje en movimiento</h1>'
             f'<p class="lead">La ceremonia del Sobral, el cruce, las islas y el regreso.</p></section>'
             f'<section class="video-grid">{cards}</section></main>')
@@ -535,7 +578,7 @@ def build_videos():
 
 
 def build_gallery():
-    sections = [("Antecedentes", ["liceo", "atlantis", "transporte", "familia"]), ("Sudor I: el velero", ["sudor1", "sudor1b"])]
+    sections = [("Antecedentes", ["liceo", "atlantis", "transporte", "familia"]), ("Sudor I: el velero", ["sudor1", "sudor1b", "sudor2023"])]
     sections += [(ch["title"], [ch["slug"]] + ch.get("extra_photos", []) + (["tumbledown"] if ch["slug"] == "tumbledown-y-darwin" else [])) for ch in CHAPTERS]
     sections += [("Promoción 90", ["sobral"]), ("Gracias", ["gracias"])]
     body = "".join(f'<section class="gallery-section"><h2>{html.escape(t)}</h2>{"".join(photo_grid(k, 1, t) for k in keys)}</section>'
