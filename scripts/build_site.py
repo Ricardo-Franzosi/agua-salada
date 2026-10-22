@@ -59,7 +59,7 @@ VIDEOS = {
 PHOTOS = {
     "intro": [("d02-image2", "")],
     "liceo": [("d03-image3", "Liceo Naval Militar «Almirante Guillermo Brown»"), ("d03-image4", "El banderín de la XXXV promoción, con las Malvinas como motivo"),
-              ("d03-image5", "La XXXV"), ("d03-image7", "Ricardo en formación, cadete de primer año en el Liceo Naval (1982)"), ("d03-image9", ""), ("d03-image8", ""), ("d03-image6", "")],
+              ("d03-image5", "La XXXV"), ("d03-image7", "Ricardo en formación, cadete de primer año en el Liceo Naval (1982)"), ("d03-image9", "Con los compañeros de la XXXV, ya egresados"), ("d03-image8", "La XXXV con los hijos")],
     "atlantis": [("d03-image10", "Con el Atlantis en la Antártida")],
     "transporte": [("d04-image14", "Transporte ARA B-5 «Cabo de Hornos»"), ("d04-image11", "El transporte en un sello postal"),
                    ("d04-image15", "Desembarco de los Super Étendard traídos desde Francia por el transporte ARA «Cabo de Hornos», al terminar la guerra"),
@@ -70,6 +70,7 @@ PHOTOS = {
     "sudor1b": [("d06-image25", ""), ("d06-image26", ""), ("d06-image27", ""), ("d06-image28", ""), ("d06-image29", ""),
                 ("d06-image30", "El motor nuevo"), ("d06-image36", ""), ("d06-image34", ""), ("d06-image33", ""),
                 ("d06-image35", ""), ("d06-image32", ""), ("d06-image31", ""), ("d06-image37", "")],
+    "la-zarpada": [("d03-image6", "Planificando la derrota a bordo del Cabo de Hornos")],
     "mar-del-plata-y-puerto-belgrano": [("d07-image39", "El Cabo de Hornos en Mar del Plata"), ("d08-image44", ""), ("d08-image45", ""), ("d08-image47", "Asado a bordo"),
                                         ("d08-image46", ""), ("d08-image48", ""), ("d08-image49", ""), ("d08-image50", "")],
     "bahia-cracker": [("d09-image51", "El Cabo de Hornos fondeado"), ("d09-image53", ""), ("d09-image54", ""),
