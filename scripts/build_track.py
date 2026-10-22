@@ -121,6 +121,52 @@ def simplify(pts, tol_nm=0.05):
     return [p for p, k in zip(pts, keep) if k]
 
 
+def port_name(p):
+    """Nombre del puerto o fondeadero más cercano a una posición."""
+    m = min(MARKERS, key=lambda m: nm((m[1], m[2]), p))
+    return "Centro Naval Núñez" if "Núñez" in m[0] else m[0]
+
+
+def legs(pts, hours=5, radius=1.0):
+    """Tramos entre puertos: una escala es quedarse 5 h a menos de 1 MN, o un hueco de 5 h sin posiciones."""
+    stops, i = [], 0
+    while i < len(pts):
+        j = i
+        while j + 1 < len(pts) and nm(pts[i], pts[j + 1]) < radius:
+            j += 1
+        if (pts[j][2] - pts[i][2]).total_seconds() >= hours * 3600:
+            stops.append((i, j))
+            i = j + 1
+        elif i + 1 < len(pts) and (pts[i + 1][2] - pts[i][2]).total_seconds() >= hours * 3600:
+            stops.append((i, i + 1))
+            i += 1
+        else:
+            i += 1
+    out = []
+    for (_, a), (b, _) in zip(stops, stops[1:]):
+        seg = pts[a:b + 1]
+        d = distance(seg)
+        if d < 3:  # cambios de amarra dentro del mismo puerto
+            continue
+        h = (seg[-1][2] - seg[0][2]).total_seconds() / 3600
+        out.append({"from": port_name(seg[0]), "to": port_name(seg[-1]), "start": seg[0][2].isoformat(),
+                    "end": seg[-1][2].isoformat(), "nm": round(d, 1), "hours": round(h, 1)})
+    return out
+
+
+def best_day(pts):
+    """Mayor distancia navegada en 24 horas corridas."""
+    best, when, e = 0.0, None, 0
+    for k in range(len(pts)):
+        e = max(e, k)
+        while e + 1 < len(pts) and (pts[e + 1][2] - pts[k][2]).total_seconds() <= 86400:
+            e += 1
+        d = distance(pts[k:e + 1])
+        if d > best:
+            best, when = d, pts[k][2]
+    return {"nm": round(best, 1), "start": when.isoformat()}
+
+
 def phase_of(t):
     return next(key for key, _, a, b in PHASES if a <= t < b)
 
@@ -162,6 +208,8 @@ def main():
             "totalNm": round(sum(phase_nm.values()), 1),
             "phases": [{"key": k, "name": n, "nm": round(phase_nm.get(k, 0), 1)} for k, n, *_ in PHASES],
             "southmost": min(p[0] for p in pts),
+            "legs": legs(pts),
+            "bestDay": best_day(pts),
         },
         "markers": [{"name": n, "lat": la, "lon": lo, "date": d} for n, la, lo, d in MARKERS],
         "days": days,

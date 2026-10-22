@@ -10,7 +10,7 @@ un archivo que todavía no está se muestra como recuadro "pendiente".
 """
 import html
 import json
-from datetime import date
+from datetime import date, datetime
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -121,7 +121,10 @@ PHOTOS = {
                    ("d18-image100", "Vista desde Tumbledown a la bahía de Puerto Argentino"), ("d18-image101", "Pozo de zorro entre Tumbledown y Dos Hermanas")],
     "darwin": [("d19-image102", "El cementerio de Darwin"), ("ig/fb-darwin-1", ""), ("ig/fb-darwin-2", ""), ("d19-image103", ""), ("d19-image104", "Soldado argentino solo conocido por Dios"),
                ("d20-image105", ""), ("d20-image106", "")],
-    "garden-point": [("d21-image109", ""), ("d21-image107", ""), ("d21-image110", ""), ("d21-image111", "")],
+    "garden-point": [("d21-image109", ""), ("d21-image107", ""), ("d21-image111", "")],
+    "la-vuelta-al-continente": [("d21-image110", "30 de enero: Francho recorriendo el circuito de gasoil tapado")],
+    "charla": [("slide-01", "La portada de la charla"), ("slide-02", "«El agua salada lo cura todo»"),
+               ("slide-28", "La última diapositiva: los agradecimientos")],
     "san-julian": [("ig/ig-131", "Dos anclas y 100 metros de cadena: el recupero de la cadena tras la garreada del doble fondeo en San Julián"),
                    ("d22-image116", "Luego de la garreada y de levantar el fondeo a mano por el enredo, el Cabo de Hornos navegando al muelle comercial de San Julián"),
                    ("d22-image115", "Amarrados al muelle y a la costa para aguantar los vientos y las olas de algunos chubascos, mientras esperábamos la apertura del puerto para continuar el regreso")],
@@ -438,6 +441,38 @@ def stats(track):
             f'<div class="stat"><strong>22/1</strong><span>homenaje al ARA «Alférez Sobral»</span></div></div>')
 
 
+def duracion(h):
+    d, r = divmod(round(h), 24)
+    return f"{d} d {r} h" if d else f"{r} h"
+
+
+def numeros(track):
+    """El viaje en números, calculado con el recorrido del inReach."""
+    s, legs = track["summary"], track["summary"]["legs"]
+    fecha = lambda iso: f"{int(iso[8:10])} {['ene', 'feb'][int(iso[5:7]) - 1]}"
+    horas = sum(l["hours"] for l in legs)
+    millas = sum(l["nm"] for l in legs)
+    cruce = max(legs, key=lambda l: l["nm"])
+    escalas = [(a["to"], (datetime.fromisoformat(b["start"]) - datetime.fromisoformat(a["end"])).total_seconds() / 3600) for a, b in zip(legs, legs[1:])]
+    espera = max(escalas, key=lambda e: e[1])
+    best = s["bestDay"]
+    tiles = [(f"{len(legs)}", "tramos, de puerto a puerto"),
+             (f"{horas / 24:.1f}".replace(".", ","), f"días navegando ({round(horas)} horas)"),
+             (f"{millas / horas:.1f}".replace(".", ","), "nudos de velocidad media"),
+             (f"{miles(best['nm'])}", f"millas en 24 horas, el mejor día ({fecha(best['start'])})"),
+             (f"{miles(cruce['nm'])}", f"millas sin escalas: {cruce['from']} – {cruce['to']}"),
+             (duracion(espera[1]), f"la espera más larga, en {espera[0]}"),
+             ("43", "nudos de viento, el máximo informado a bordo (San Julián)"),
+             (f"{len(escalas)}", "escalas en puertos y fondeaderos")]
+    tiles_html = "".join(f'<div class="stat"><strong>{v}</strong><span>{html.escape(t)}</span></div>' for v, t in tiles)
+    rows = "".join(f'<tr><td>{fecha(l["start"])}</td><th scope="row">{html.escape(l["from"])} → {html.escape(l["to"])}</th>'
+                   f'<td>{miles(l["nm"])} MN</td><td>{duracion(l["hours"])}</td><td>{l["nm"] / l["hours"]:.1f} nudos</td></tr>'.replace(".", ",")
+                   for l in legs)
+    return (f'<div class="stats-row numbers-row">{tiles_html}</div>'
+            f'<div class="legs-wrap"><table class="legs-table"><thead><tr><th>Zarpada</th><th>Tramo</th><th>Millas</th><th>Tiempo</th><th>Media</th></tr></thead>'
+            f'<tbody>{rows}</tbody></table></div>')
+
+
 def build_index(track):
     phases = "".join(f'<tr><th scope="row">{ph["name"]}</th><td>{miles(ph["nm"])} MN</td></tr>' for ph in track["summary"]["phases"])
     parts = [
@@ -464,11 +499,14 @@ def build_index(track):
 <p><a class="button" style="background:#fff;color:var(--navy)" href="./pages/sobral.html">Conocer la historia y ver la ceremonia</a></p></div></section>
 {timeline(0)}
 <section class="journey-overview shell" aria-labelledby="ruta-viaje"><div class="journey-heading"><div><p class="eyebrow">Sudor, lágrimas y mar</p><h2 id="ruta-viaje">El viaje en cinco partes</h2></div>
-<p>Como en la charla, el relato va de los antecedentes al regreso.</p></div><div class="journey-cards">{journey}</div></section>
+<p>Como en <a href="./pages/charla.html">la charla «Agua salada»</a>, el relato va de los antecedentes al regreso.</p></div><div class="journey-cards">{journey}</div></section>
 <section class="shell video-section"><div class="section-heading video-heading"><div><p class="eyebrow">Video</p><h2>Agua salada</h2></div><p>Navegando hacia las islas, la mañana del 22 de enero.</p></div>
 {video("navegando-a-malvinas", 0, True)}<a class="gallery-link" href="./pages/videos.html">Ver todos los videos →</a></section>
+<section class="shell numbers-section" aria-labelledby="numeros"><div class="section-heading"><p class="eyebrow">Sobre la carta</p><h2 id="numeros">El viaje en números</h2>
+<p class="lead">Calculado con las posiciones que el inReach del velero registró durante toda la travesía.</p></div>
+{numeros(track)}</section>
 <section class="shell"><article class="card prose page-card"><header class="article-heading"><p class="eyebrow">Sobre la carta</p><h2>El recorrido completo</h2></header>
-<p>El inReach del velero registró la posición durante toda la travesía. La cartografía permite seguirla día por día.</p>
+<p>La cartografía permite seguir el recorrido día por día. Por etapas, las millas navegadas fueron:</p>
 <table class="nm-table"><tbody>{phases}<tr><th scope="row">Total</th><td>{miles(track["summary"]["totalNm"])} MN</td></tr></tbody></table>
 <a class="gallery-link" href="./cartografia.html">Abrir la cartografía interactiva →</a></article></section>
 </main>"""
@@ -478,7 +516,12 @@ def build_index(track):
 
 
 NM_STYLE = ("<style>.nm-table{width:100%;max-width:520px;margin-top:1.2rem;border-collapse:collapse}.nm-table th,.nm-table td{padding:.5rem .7rem;border-bottom:1px solid var(--line);text-align:left}"
-            ".nm-table td{text-align:right;color:var(--navy);font-weight:800}.nm-table tr:last-child th,.nm-table tr:last-child td{font-weight:800;border-bottom:0}</style>")
+            ".nm-table td{text-align:right;color:var(--navy);font-weight:800}.nm-table tr:last-child th,.nm-table tr:last-child td{font-weight:800;border-bottom:0}"
+            ".numbers-section{padding:3rem 0 2rem}.numbers-section .lead{margin-top:.8rem}.numbers-row{margin-top:1.6rem}"
+            ".legs-wrap{overflow-x:auto;margin:1.6rem 0 1rem;border:1px solid var(--line);border-radius:var(--radius-sm);background:rgba(255,255,255,.76)}"
+            ".legs-table{width:100%;border-collapse:collapse;font-size:.92rem}.legs-table th,.legs-table td{padding:.6rem .8rem;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}"
+            ".legs-table thead th{color:var(--ink-soft);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase}.legs-table tbody th{color:var(--navy);white-space:normal;min-width:220px}"
+            ".legs-table td:nth-child(n+3){text-align:right;font-variant-numeric:tabular-nums}.legs-table tr:last-child th,.legs-table tr:last-child td{border-bottom:0}</style>")
 
 
 def build_antecedentes():
@@ -626,11 +669,38 @@ def build_gracias():
 <p>Y a la Promoción 90 de la ESNM, por concedernos el honor del homenaje, y a todos los que siguieron el viaje mensaje a mensaje.</p>
 <p>Acompañaron la travesía: Finca Lolita y Famille Bizet, Finca Ambrosía, Dos Anclas, Clan Issime, Mieles Santos, Georgalos y Red Bull.</p></article>
 {photo_grid("gracias", 1, "Agradecimientos")}
+<p class="gallery-link"><a href="./charla.html">La charla «Agua salada», en el Centro Naval y en Luján →</a></p>
 {poema()}
 </main>"""
     (ROOT / "pages" / "gracias.html").write_text(
         page(1, "pages/gracias.html", f"Gracias · {SITE}", "Agradecimientos de la travesía del velero Cabo de Hornos a Malvinas.", main,
              extra_head="<style>.thanks dd{text-align:right;max-width:60%;font-weight:600}.poem{margin-top:2rem}.poem-body p{font-family:Georgia,'Times New Roman',serif;font-size:1.08rem;line-height:1.75;color:#263b42!important;font-style:italic}.poem-author{color:var(--ink-soft)!important;font-size:.9rem}</style>"), encoding="utf-8")
+
+
+def build_charla():
+    parts = [("Agua salada", "El dicho que da nombre a la charla.", "../index.html"),
+             ("Antecedentes", "El Liceo Naval y la XXXV, el Atlantis y el transporte ARA «Cabo de Hornos».", "./antecedentes.html"),
+             ("Sudor I", "Los años de preparación del velero.", "./velero.html"),
+             ("El mar", "De Núñez a Camarones y el cruce a Malvinas.", f"./bitacora/{CHAPTERS[0]['slug']}.html"),
+             ("Lágrimas", "La ceremonia por el Sobral, Tumbledown y Darwin.", "./sobral.html"),
+             ("Sudor II", "Odiseo y el regreso a Ítaca: anclas, motor y caja reductora.", f"./bitacora/{CHAPTERS[STAGES[2][2]]['slug']}.html"),
+             ("Gracias", "A quienes nos recibieron y ayudaron en cada puerto.", "./gracias.html")]
+    rows = "".join(f'<li><a href="{h}"><strong>{html.escape(n)}</strong></a> · {html.escape(d)}</li>' for n, d, h in parts)
+    main = f"""<main class="shell" id="contenido">
+<section class="page-hero chapter-hero"><p class="eyebrow">Contar el viaje</p><h1>La charla «Agua salada»</h1>
+<p class="lead">De vuelta en casa, la travesía se convirtió en una charla: veintiocho diapositivas, fotos, videos y los mensajes que salieron del inReach.</p></section>
+<article class="card prose page-card"><header class="article-heading"><p class="eyebrow">Dónde se contó</p><h2>En el Centro Naval y en Luján</h2></header>
+<p>Francho presentó «Agua salada» en el Centro Naval, en la sede de Núñez de donde zarpó el Cabo de Hornos, y en un club náutico de Luján.</p>
+<p>La charla parte de un dicho popular: «El agua salada lo cura todo, ya sea en sus formas de sudor, de lágrimas o en el mar». Con ese hilo, el relato recorre el viaje en siete partes. Este sitio sigue el mismo orden:</p>
+<ul class="talk-parts">{rows}</ul></article>
+{photo_grid("charla", 1, "La charla «Agua salada»")}
+<article class="card prose page-card"><header class="article-heading"><p class="eyebrow">Febrero de 2026</p><h2>En «¿Quién te conoce?»</h2></header>
+<p>La historia también llegó al streaming: Francho fue invitado al programa «¿Quién te conoce?», de Foco Stream, para contar sus aventuras.</p>
+<figure class="photo-card" style="margin-top:1.2rem"><img src="../assets/images/ig/entrevista-quien-te-conoce.jpg" alt="Francho en el programa ¿Quién te conoce? de Foco Stream" loading="lazy" decoding="async"><figcaption><span>«¿Quién te conoce?» ft. Ricardo Franzosi · Foco Stream</span></figcaption></figure></article>
+</main>"""
+    (ROOT / "pages" / "charla.html").write_text(
+        page(1, "pages/charla.html", f"La charla · {SITE}", "La charla «Agua salada» sobre la travesía del velero Cabo de Hornos a Malvinas.", main,
+             extra_head="<style>.talk-parts{margin:1rem 0 0;padding-left:1.2rem;display:grid;gap:.45rem;color:#384b51}.talk-parts a{color:var(--navy);text-underline-offset:3px}.gallery-grid .photo-card img{aspect-ratio:16/9}</style>"), encoding="utf-8")
 
 
 def build_videos():
@@ -729,6 +799,7 @@ def main():
     build_velero()
     build_sobral(track)
     build_gracias()
+    build_charla()
     build_videos()
     build_gallery()
     print(f"Sitio generado: {len(CHAPTERS)} capítulos · {miles(track['summary']['totalNm'])} MN")
