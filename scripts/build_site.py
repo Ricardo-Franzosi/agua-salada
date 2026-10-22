@@ -103,14 +103,19 @@ PHOTOS = {
                       ("d09-image58", "Pizarra con las novedades de la guardia y el último pronóstico meteorológico")],
     "camarones": [("ig/ig-103", "Gracias, Finca Lolita y Famille Bizet"), ("ig/ig-109", "Pingüinera de Cabo Dos Bahías"), ("ig/ig-110", ""),
                   ("ig/ig-111", ""), ("ig/ig-112", ""), ("ig/ig-116", "Bahía Melo"), ("ig/ig-119", "En la cava de Alma Patagónica"),
-                  ("ig/ig-121", "Chau Camarones"), ("d10-image60", "El Cabo de Hornos amarrado en Camarones, visto desde el drone"), ("d10-image59", "Imagen del plóter arribando a Puerto Camarones"), ("d10-image62", "Navegando en la rada de Camarones"), ("d10-image67", "La entrada a Caleta Sara"), ("d10-image64", "El cartel de bienvenida a Caleta Sara"),
+                  ("ig/ig-121", "Chau Camarones"), ("ig/ig-122", "19 de enero: despachados a Malvinas. Junto al monumento «No al olvido», antes de soltar amarras"), ("d10-image60", "El Cabo de Hornos amarrado en Camarones, visto desde el drone"), ("d10-image59", "Imagen del plóter arribando a Puerto Camarones"), ("d10-image62", "Navegando en la rada de Camarones"), ("d10-image67", "La entrada a Caleta Sara"), ("d10-image64", "El cartel de bienvenida a Caleta Sara"),
                   ("d10-image65", "El parador náutico de Caleta Sara"), ("d10-image61", "Francho haciendo de cirujano, suturando a Georgie, que tuvo un pequeño accidente"), ("d10-image63", "Taladro usado para mover eléctricamente los molinetes"), ("d10-image66", "Taladro usado para mover eléctricamente los molinetes")],
     "el-cruce": [("d11-image71", "Puerto Argentino a la vista"), ("d11-image68", "")],
     "el-homenaje": [("d15-image82", "Ceremonia en honor al capitán Gómez Roca y sus hombres caídos en el ARA «Sobral»")],
-    "puerto-argentino": [("d12-image75", "Llegada a Puerto Argentino"), ("d12-image73", "En un pub del centro"), ("d12-image74", "En un pub del centro"),
+    "puerto-argentino": [("d12-image75", "Llegada a Puerto Argentino"), ("puerto/pa-llegada", "23 de enero: Puerto Argentino desde la cubierta del Cabo de Hornos"),
+                         ("d12-image73", "En un pub del centro"), ("d12-image74", "En un pub del centro"),
                          ("d12-image76", "Ventana de una residencia «kelper». El cartel dice: «A la Nación Argentina y a su pueblo: serán bienvenidos en nuestro país cuando abandonen su reclamo de soberanía y reconozcan nuestro derecho a la autodeterminación»"),
+                         ("puerto/pa-telefono", "La cabina telefónica roja, junto a la oficina de información turística"),
+                         ("puerto/pa-penguin-news", "La redacción del «Penguin News», el periódico de las islas"),
                          ("d13-image77", "Ambulancias del hospital nuevo"), ("d13-image78", "Hospital de Puerto Argentino"),
-                         ("d13-image79", "Monumento de conmemoración de los ingleses"), ("d13-image80", "Monumento inglés a Margaret Thatcher")],
+                         ("d13-image79", "Monumento de conmemoración de los ingleses"), ("d13-image80", "Monumento inglés a Margaret Thatcher"),
+                         ("puerto/pa-playa", "24 de enero: playa de arena blanca y agua turquesa en las afueras de Puerto Argentino"),
+                         ("puerto/pa-naufragio", "25 de enero: el casco de un velero de tres palos varado en la bahía")],
     "tumbledown": [("d16-image86", "Imágenes del campo de batalla, con los cráteres de las explosiones de las bombas del combate"),
                    ("d16-image87", "Cráteres en el campo de combate"), ("d16-image88", "Cruz en la cima de Tumbledown"), ("d16-image89", "La tripulación en el campo de Tumbledown"),
                    ("d17-image93", "Cocina de campaña perteneciente al Batallón de Infantería de Marina N.º 5"),
@@ -127,7 +132,8 @@ PHOTOS = {
                ("slide-28", "La última diapositiva: los agradecimientos")],
     "san-julian": [("ig/ig-131", "Dos anclas y 100 metros de cadena: el recupero de la cadena tras la garreada del doble fondeo en San Julián"),
                    ("d22-image116", "Luego de la garreada y de levantar el fondeo a mano por el enredo, el Cabo de Hornos navegando al muelle comercial de San Julián"),
-                   ("d22-image115", "Amarrados al muelle y a la costa para aguantar los vientos y las olas de algunos chubascos, mientras esperábamos la apertura del puerto para continuar el regreso")],
+                   ("d22-image115", "Amarrados al muelle y a la costa para aguantar los vientos y las olas de algunos chubascos, mientras esperábamos la apertura del puerto para continuar el regreso"),
+                   ("puerto/sj-club-el-delfin", "En agradecimiento al Club Náutico El Delfín por su ayuda y hospitalidad, en especial a su presidente, el Sr. Sergio Asensio")],
     "caleta-hornos": [("d23-image117", "Fondeados en Caleta Hornos"), ("d23-image118", "Recolección de mejillones"), ("d23-image119", "Mejillones y almejas"),
                       ("d23-image120", "Nico viendo si encontraba algo para arponear"), ("d23-image121", "El gran pescador Pablo Yema con una de sus capturas"), ("d23-image122", "Walter Czeskiavikus, Pablo Yema, Francho, Nicolás Vitale y Jorge Bizet en Caleta Hornos"), ("d23-image123", "Despedida de Caleta Hornos: Francho preparando una «fritata» con la pesca del día"),
                       ("ig/ig-140", "La pesca del día"), ("ig/ig-141", "Sashimi a bordo")],
@@ -180,7 +186,7 @@ CHAPTERS = [
          body=p("La idea inicial era cruzar desde Puerto Deseado, pero la alerta por vientos del sudoeste de 40 nudos para el miércoles y el jueves cambió los planes. El 16 de enero el Cabo de Hornos entró a Camarones para reabastecerse y esperar.")
          + q("Hola fernando / Acá guardados en Camarones. / Lugar hermoso.", "17 de enero, Camarones")
          + p("Hubo tiempo para conocer la pingüinera de Cabo Dos Bahías y Bahía Melo, y para brindar con los vinos de Finca Lolita y Famille Bizet, que acompañaron todo el viaje.")
-         + p("Desde ahí se fue armando la decisión del cruce: una ventana de tres días, el archivo GRIB cargado en el plóter y la idea de entrar a Malvinas por el norte. El 19 de enero, por la tarde, soltaron amarras.")),
+         + p("Desde ahí se fue armando la decisión del cruce: una ventana de tres días, el archivo GRIB cargado en el plóter y la idea de entrar a Malvinas por el norte. El 19 de enero, ya despachados a Malvinas por la Prefectura, soltaron amarras por la tarde.")),
     dict(slug="el-cruce", title="El cruce a Malvinas", start=date(2024, 1, 19), end=date(2024, 1, 22),
          lead="Rumbo 142 hacia la isla Gran Jason, la más occidental del archipiélago.", videos=["el-cruce", "ig-125", "navegando-a-malvinas"],
          body=p("La tripulación que cruzó desde la Patagonia a Malvinas: Esteban Casares, Oscar Díaz Thompson, Jorge Bizet, Francho, Leticia Dufau y Walter Czeskiavikus.")
@@ -250,7 +256,7 @@ THANKS = [
     ("Mar del Plata", "CN Daniel Corvalán, Ctre. Roberto Denis, TC Agustín Vázquez"),
     ("Base Naval Puerto Belgrano", "Cro. Rodrigo Ataun, CN Daniel Aldama, CN Guillermo Simoncini, C Alte. Gustavo Lioi Pombo, Oscar Isa (ADAM y velero «Azul»), Omar Anziano, Andrea Gatica, Fernando Almada, Máximo Mónaco"),
     ("Camarones", "Mara y Ariel (Caleta Sara)"),
-    ("San Julián", "Sergio Lasencion, Juan Pereira"),
+    ("San Julián", "Club Náutico El Delfín: su presidente, Sergio Asensio, y Juan Pereira"),
     ("Malvinas", "LT Samanta Davis"),
 ]
 
@@ -437,6 +443,7 @@ TIMELINE = [
     ("2017–2019", "La carroza", "En tierra, Jesús Vinacua le hace las modificaciones de la carroza.", "pages/velero.html"),
     ("2019–2024", "Sudor I", "Pasa a llamarse «Cabo de Hornos». Cinco años de preparación para su primera singladura.", "pages/velero.html"),
     ("2021–2022", "El Atlantis", "Mientras tanto, la expedición en velero de Buenos Aires a la Antártida.", "pages/antecedentes.html"),
+    ("30 de octubre de 2023", "La autorización", "Cancillería no pone objeciones y la Prefectura Naval autoriza la travesía a Malvinas.", "pages/velero.html"),
     ("Noviembre de 2023", "Prueba de mar", "Buenos Aires – Quequén – Mar del Plata – Buenos Aires.", "pages/velero.html"),
     ("23 de diciembre de 2023", "La Promoción 90 a bordo", "Los compañeros de su padre visitan el velero antes de la partida.", "pages/sobral.html"),
     ("3 de enero de 2024", "La zarpada", "Primera singladura del velero «Cabo de Hornos»: a las 4 de la mañana zarpa del Centro Naval Núñez rumbo a Malvinas.", "pages/bitacora/la-zarpada.html"),
@@ -602,7 +609,8 @@ def build_velero():
 <p>El velero llegó en 2017, comprado al ingeniero Alonso, con el casco azul que se ve en las primeras fotos. Estuvo en tierra mientras Jesús Vinacua le hacía las modificaciones de la carroza, y en octubre de 2019 volvió al agua.</p>
 <p>Desde 2019 hasta 2024 se preparó para su primera singladura: pintura, motor nuevo, instalaciones, interiores y cada detalle que exige una navegación al Atlántico Sur. Esa singladura fue la travesía a Malvinas.</p></article>
 <article class="card prose page-card"><header class="article-heading"><p class="eyebrow">Noviembre y diciembre de 2023</p><h2>Prueba de mar y últimos preparativos</h2></header>
-<p>En noviembre de 2023 llegó la navegación previa, la prueba de mar: Buenos Aires – Quequén – Mar del Plata – Buenos Aires. El 11 de diciembre llegó la autorización para el viaje y siguieron los últimos preparativos.</p>
+<p>En noviembre de 2023 llegó la navegación previa, la prueba de mar: Buenos Aires – Quequén – Mar del Plata – Buenos Aires. El 30 de octubre la Cancillería, a través de la Dirección Nacional de Malvinas, informó que no tenía objeciones al viaje, y la Prefectura Naval otorgó la autorización para navegar hasta las islas. El 11 de diciembre lo anunciaron en redes: «¡Autorizados!». Siguieron los últimos preparativos.</p>
+<figure class="photo-card doc-figure"><a href="../assets/images/ig/nota-autorizacion.jpg"><img src="../assets/images/ig/nota-autorizacion.jpg" alt="Nota de la Dirección Nacional de Malvinas a la Prefectura Naval por la autorización del velero Cabo de Hornos, 30 de octubre de 2023" loading="lazy" decoding="async"></a><figcaption><span>La nota del 30 de octubre de 2023 a la Prefectura Naval: no hay objeciones para la travesía de enero de 2024. (En la nota la señal distintiva figura por error como LW4717; la correcta es LW4177).</span></figcaption></figure>
 <p>El 23 de diciembre subieron a bordo integrantes de la Promoción 90 de la ESNM, «compañeros del verdadero comandante del ARA “Cabo de Hornos”». El 2 de enero de 2024, por fin: «¡Llegó el día!».</p></article>
 <section class="video-grid">{video("ig-034", 1, True)}</section>
 {photo_grid("sudor2023", 1, "Prueba de mar y preparativos")}
@@ -612,7 +620,8 @@ def build_velero():
 <nav class="chapter-nav" aria-label="Capítulos"><a href="./antecedentes.html"><span>Anterior</span><strong>Antecedentes</strong></a><a href="./bitacora/{CHAPTERS[0]['slug']}.html"><span>Siguiente</span><strong>{CHAPTERS[0]['title']}</strong></a></nav>
 </main>"""
     (ROOT / "pages" / "velero.html").write_text(
-        page(1, "pages/velero.html", f"El velero · {SITE}", "El velero Cabo de Hornos y su preparación para la travesía a Malvinas.", main), encoding="utf-8")
+        page(1, "pages/velero.html", f"El velero · {SITE}", "El velero Cabo de Hornos y su preparación para la travesía a Malvinas.", main,
+             extra_head="<style>.doc-figure{max-width:520px;margin:1.4rem auto}.doc-figure img{aspect-ratio:auto;height:auto;object-fit:contain;background:#fff}</style>"), encoding="utf-8")
 
 
 def build_sobral(track):
@@ -719,12 +728,14 @@ def build_charla():
 <ul class="talk-parts">{rows}</ul></article>
 {photo_grid("charla", 1, "La charla «Agua salada»")}
 <article class="card prose page-card"><header class="article-heading"><p class="eyebrow">Febrero de 2026</p><h2>En «¿Quién te conoce?»</h2></header>
-<p>La historia también llegó al streaming: Francho fue invitado al programa «¿Quién te conoce?», de Foco Stream, para contar sus aventuras.</p>
-<figure class="photo-card" style="margin-top:1.2rem"><img src="../assets/images/ig/entrevista-quien-te-conoce.jpg" alt="Francho en el programa ¿Quién te conoce? de Foco Stream" loading="lazy" decoding="async"><figcaption><span>«¿Quién te conoce?» ft. Ricardo Franzosi · Foco Stream</span></figcaption></figure></article>
+<p>La historia también llegó al streaming: Francho fue invitado al programa «¿Quién te conoce?», de Foco Stream, para contar sus aventuras. Además de la travesía a Malvinas, contó la expedición a la Antártida en el velero Atlantis y los viajes por Sudamérica y África a bordo del «Principito», su Citroën 3CV modelo 1973.</p><ul class="talk-parts"><li><a href="{ATLANTIS}"><strong>Francho y el Atlantis</strong></a> · de Buenos Aires a la Antártida en velero.</li><li><a href="https://ricardo-franzosi.github.io/tour-bicentenario-3cv/"><strong>Tour del Bicentenario 3CV</strong></a> · la bitácora de ruta.</li><li><a href="https://ricardo-franzosi.github.io/tour-andino-2011/"><strong>Tour Andino 2011</strong></a> · la bitácora de ruta.</li><li><strong>El cruce del Sahara (2022)</strong> · bitácora en el Citroën 3CV 1973. <em class="pending-note">En construcción.</em></li><li><strong>África (2025)</strong> · bitácora en el Citroën 3CV 1973. <em class="pending-note">En construcción.</em></li></ul>
+<div class="interview-grid"><figure class="photo-card"><img src="../assets/images/ig/afiche-quien-te-conoce.jpg" alt="Afiche del programa ¿Quién te conoce? con Ricardo Franzosi" loading="lazy" decoding="async"><figcaption><span>El afiche del programa</span></figcaption></figure>
+<figure class="photo-card"><img src="../assets/images/ig/entrevista-quien-te-conoce.jpg" alt="Francho en el programa ¿Quién te conoce? de Foco Stream" loading="lazy" decoding="async"><figcaption><span>«¿Quién te conoce?» ft. Ricardo Franzosi · Foco Stream</span></figcaption></figure></div>
+<a class="yt-card" href="https://www.youtube.com/live/qKVV7qNAPso" target="_blank" rel="noopener"><img src="../assets/images/ig/yt-quien-te-conoce.jpg" alt="" loading="lazy" decoding="async"><span class="yt-play" aria-hidden="true"></span><span class="yt-text"><strong>Ver el programa completo</strong><span>«¿Quién te conoce?» con Ricardo Franzosi · Foco Stream · YouTube</span></span></a></article>
 </main>"""
     (ROOT / "pages" / "charla.html").write_text(
         page(1, "pages/charla.html", f"La charla · {SITE}", "La charla «Agua salada» sobre la travesía del velero Cabo de Hornos a Malvinas.", main,
-             extra_head="<style>.talk-parts{margin:1rem 0 0;padding-left:1.2rem;display:grid;gap:.45rem;color:#384b51}.talk-parts a{color:var(--navy);text-underline-offset:3px}.gallery-grid .photo-card img{aspect-ratio:16/9}</style>"), encoding="utf-8")
+             extra_head="<style>.talk-parts{margin:1rem 0 0;padding-left:1.2rem;display:grid;gap:.45rem;color:#384b51}.talk-parts a{color:var(--navy);text-underline-offset:3px}.gallery-grid .photo-card img{aspect-ratio:16/9}.pending-note{font-size:.92rem;color:var(--ink-soft)!important;font-style:italic}.yt-card{position:relative;display:block;margin-top:1.4rem;aspect-ratio:16/9;border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-sm);text-decoration:none;color:#fff}.yt-card img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .35s ease}.yt-card:hover img{transform:scale(1.02)}.yt-card::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,30,40,0) 35%,rgba(10,30,40,.75))}.yt-play{position:absolute;z-index:1;left:50%;top:44%;width:84px;height:84px;margin:-42px 0 0 -42px;border-radius:50%;background:rgba(10,30,40,.82);box-shadow:0 6px 24px rgba(0,0,0,.3);transition:background .2s}.yt-play::before{content:'';position:absolute;left:34px;top:26px;border-style:solid;border-width:16px 0 16px 26px;border-color:transparent transparent transparent #fff}.yt-card:hover .yt-play{background:#c4302b}.yt-text{position:absolute;z-index:1;left:1.4rem;right:1.4rem;bottom:1.2rem;display:grid;gap:.2rem}.yt-text strong{font-family:Georgia,'Times New Roman',serif;font-size:1.5rem;color:#fff}.yt-text span{font-size:.95rem;color:rgba(255,255,255,.9)}@media(max-width:640px){.yt-play{width:64px;height:64px;margin:-32px 0 0 -32px}.yt-play::before{left:26px;top:20px;border-width:12px 0 12px 20px}.yt-text strong{font-size:1.15rem}.yt-text span{font-size:.82rem}}.interview-grid{display:grid;grid-template-columns:2fr 3fr;gap:1rem;margin-top:1.2rem;align-items:start}.interview-grid img{width:100%;height:auto;aspect-ratio:auto}@media(max-width:640px){.interview-grid{grid-template-columns:1fr}}</style>"), encoding="utf-8")
 
 
 def build_videos():
