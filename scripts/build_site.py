@@ -30,6 +30,8 @@ NAV = [
     ("Homenaje al Sobral", "pages/sobral.html"),
     ("Videos", "pages/videos.html"),
     ("Galería", "pages/gallery.html"),
+    ("La charla", "pages/charla.html"),
+    ("Gracias", "pages/gracias.html"),
 ]
 
 # Etapas de la bitácora: nombre, descripción y rango de capítulos [desde, hasta)
@@ -281,6 +283,7 @@ def footer(depth):
     return (f'<footer class="site-footer"><div class="shell footer-inner"><div><strong>{SITE}</strong>'
             f'<p>{SUBTITLE}.</p></div><div class="footer-links">'
             f'<a href="{rel(depth)}pages/bitacora/index.html">Bitácora</a><a href="{rel(depth)}pages/sobral.html">Homenaje</a>'
+            f'<a href="{rel(depth)}pages/charla.html">La charla</a><a href="{rel(depth)}pages/gracias.html">Gracias</a>'
             f'<a href="https://www.instagram.com/ricardofranzosi/" target="_blank" rel="noopener noreferrer">Instagram</a>'
             f'<a href="https://www.instagram.com/cdhsail/" target="_blank" rel="noopener noreferrer">@cdhsail</a></div></div></footer>')
 
